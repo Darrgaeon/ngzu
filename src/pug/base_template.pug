@@ -12,6 +12,9 @@ html(lang="RU")
 
 
     body
+        section.header
+            include ./components/header-utils/header-utils
+
         section.content
             block content
 
@@ -21,3 +24,5 @@ html(lang="RU")
         block custom_scripts
 
         include ./ie_fix
+
+        .text a

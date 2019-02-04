@@ -1,0 +1,27 @@
+@import "../../vars"
+@import "../../mixins"
+
+.button
+  color: $color-white
+  border-radius: 3px
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.03)
+  font-weight: 500
+  font-size: 15px / normal
+
+.button-blue
+  background: $gradient-blue
+  &:hover
+    background: $gradient-orange
+  &:disabled
+    color: $color-black
+    border: 2px solid #9DACC3
+    background: $color-white
+
+.button-orange
+  background: $gradient-orange
+  &:hover
+    background: $gradient-blue
+  &:disabled
+    color: $color-black
+    border: 2px solid #9DACC3
+    background: $color-white

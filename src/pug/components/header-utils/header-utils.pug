@@ -1,0 +1,33 @@
+include ../../mixins/svg_sprite
+
+section.header-utils
+    .container-utils
+        .callback
+            .callback__text Перезвоните мне
+            .callback__phone 8 (800) 500-0780
+
+        .links
+            .link
+                +add_svg({class: "link__icon link__mail-icon", icon: "mail"})
+                a(href="#") zakaz@nzgu.ru
+
+            .link
+                +add_svg({class: "link__icon link__youtube-icon", icon: "youtube"})
+                a(href="#") YouTube канал
+
+        .comparison
+            .link
+                .comparison-icon.link__icon
+                    +add_svg({class: "comparison-icon__image", icon: "comparison"})
+                    .status-circle
+                        .status-circle__number 12
+
+                a(href="#") Сравнение
+
+        form(action="#")
+            .search-block
+                button(type="submit").search-block__submit
+                    +add_svg({class: "search-block__icon", icon: "search"})
+
+                label
+                    input(placeholder="Поиск" name="text")
