@@ -1,10 +1,11 @@
 include ../../mixins/svg_sprite
 
 section.header-utils
-    .container-utils
-        .callback
-            .callback__text Перезвоните мне
-            .callback__phone 8 (800) 500-0780
+    .container.d-flex
+        .call_me
+            .call-me__text Перезвоните мне
+
+        a(href="#").contact-phone 8 (800) 500-0780
 
         .links
             .link
@@ -17,7 +18,7 @@ section.header-utils
 
         .comparison
             .link
-                .comparison-icon.link__icon
+                .link__icon
                     +add_svg({class: "comparison-icon__image", icon: "comparison"})
                     .status-circle
                         .status-circle__number 12
@@ -31,3 +32,5 @@ section.header-utils
 
                 label
                     input(placeholder="Поиск" name="text")
+
+

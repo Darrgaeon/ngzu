@@ -1,0 +1,19 @@
+@import "../../vars"
+@import "../../mixins"
+
+.call-me
+  display: flex
+  justify-content: center
+  align-items: center
+  &__text
+    font-size: 13px
+    padding: 8px 15px
+    background: $color-blue
+    color: $color-white
+    border-radius: 3px
+    margin-right: 15px
+    cursor: pointer
+    max-height: 31px
+    transition: $transition-duration
+    &:hover
+      background: lighten($color-blue, 5%)
