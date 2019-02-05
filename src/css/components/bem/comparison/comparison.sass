@@ -1,0 +1,38 @@
+@import "../../vars"
+@import "../../mixins"
+
+.comparison
+  display: flex
+  flex-wrap: wrap
+
+  .link__icon
+    position: relative
+
+  a
+    margin-left: 18px
+
+.comparison-icon__image
+  size: 16px 16px
+  fill: $color-white
+  position: absolute
+  top: 2px
+  left: -1px
+
+.status-circle
+  content: ""
+  size: 19px 19px
+  background: $color-blue
+  border-radius: 50%
+  position: absolute
+  top: -9px
+  left: 8px
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .status-circle__number
+    font-weight: 500
+    font-size: 11px
+    color: $color-white
+
+

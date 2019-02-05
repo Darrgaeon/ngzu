@@ -4,6 +4,7 @@
 .links
   display: flex
   flex-wrap: wrap
+  margin-right: 281px
 
 .link
   display: flex
@@ -15,16 +16,18 @@
     size: 17px 13px
     fill: $color-white
     object-fit: contain
+
+  .link__mail-icon
     margin-right: 7px
+
+  .link__youtube-icon
+    margin-right: 8px
 
   a
     cursor: pointer
     color: $color-white
     transition: $transition-duration
     position: relative
-
-    &:hover
-      color: darken($color-white, 5%)
 
     &:before
       content: ""
@@ -37,7 +40,6 @@
 
     &:hover:before
       background: $color-white
-
 
 .link:first-child
   margin-left: 0
