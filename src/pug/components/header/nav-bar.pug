@@ -1,0 +1,10 @@
+include ../../mixins/svg_sprite
+
+section.nav-bar
+    .container.nav-bar__container
+        .logo
+            a(href="#")
+                +add_svg({class: "nav-bar__logo", icon: "logo"})
+
+        include ./adaptive-menu
+

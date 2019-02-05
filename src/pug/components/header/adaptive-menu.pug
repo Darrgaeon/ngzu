@@ -1,0 +1,20 @@
+include ../../mixins/svg_sprite
+
+.nav-bar-menu.d-flex.ml-auto
+    ul.main-menu
+        li
+            a(href="#") #[span Главная]
+        li
+            a(href="#" role="dropdown")
+                +add_svg({class: "nav-bar-menu__burger", icon: "burger"})
+                span Продукция завода
+        li
+            a(href="#") #[span Услуги]
+        li
+            a(href="#") #[span Проекты]
+        li
+            a(href="#") #[span Сервис и запчасти]
+        li
+            a(href="#") #[span О компании]
+        li
+            a(href="#") #[span Контакты]
