@@ -19,11 +19,12 @@ html(lang="RU")
         section.content
             block content
 
-        section.credits
+        section.footer
+            include components/footer/footer
+            include components/footer/credits
+
 
         include ./scripts
         block custom_scripts
 
         include ./ie_fix
-
-        .text a
