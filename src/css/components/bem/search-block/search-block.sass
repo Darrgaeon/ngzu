@@ -1,17 +1,38 @@
 @import "../../vars"
 @import "../../mixins"
 
-form
-  margin-left: auto
 .search-block
   background: #111826
   display: flex
   align-items: center
-  padding: 17px 25px
-  margin-left: auto
-  input
-    max-width: 150px
-  .search-block__icon
-    size: 16px 16px
-    fill: $color-white
+  padding: 17px 25px 18px 24px
+
+  .search-block__submit
     background: #111826
+    border: none
+    outline: none
+    position: relative
+
+    .search-block__icon
+      size: 18px 18px
+      fill: $color-white
+      position: relative
+      top: -2px
+      left: -5px
+
+  label
+    position: relative
+    top: -1px
+    left: -2px
+
+    input
+      max-width: 178px
+      background: #111826
+      border: 0
+      outline: none
+      font-size: 15px
+      color: $color-white
+
+      &::placeholder
+        color: inherit
+

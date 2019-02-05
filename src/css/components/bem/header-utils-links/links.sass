@@ -4,7 +4,9 @@
 .links
   display: flex
   flex-wrap: wrap
-  margin-right: 281px
+  position: relative
+  top: -1px
+  margin-left: 50px
 
 .link
   display: flex
@@ -26,7 +28,6 @@
   a
     cursor: pointer
     color: $color-white
-    transition: $transition-duration
     position: relative
 
     &:before
@@ -37,6 +38,7 @@
       position: absolute
       top: 20px
       left: 0
+      transition: $transition-duration
 
     &:hover:before
       background: $color-white
