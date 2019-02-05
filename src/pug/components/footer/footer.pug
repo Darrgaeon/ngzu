@@ -1,21 +1,39 @@
 include ../../mixins/svg_sprite
+include ../../mixins/nav-links
 
-.container.footer__container
-    .nav-links.about-company
-        h4 О компании
 
-        ul
-            li
-                a(href="#") О нас
-            li
-                a(href="#") История компании
-            li
-                a(href="#") Наш завод
-            li
-                a(href="#") Пресс-центр
-            li
-                a(href="#") Последние новости
-            li
-                a(href="#") Выполненные проекты
-            li
-                a(href="#") Дилерская сеть
+section.footer
+    .container.footer__container
+        .nav-links.about-company
+            +nav-links("О компании",
+            {item_link: "#", item_title: "О нас"},
+            {item_link: "#", item_title: "История компании"},
+            {item_link: "#", item_title: "Наш завод"},
+            {item_link: "#", item_title: "Пресс-центр"},
+            {item_link: "#", item_title: "Последние новости"},
+            {item_link: "#", item_title: "Выполненные проекты"},
+            {item_link: "#", item_title: "Дилерская сеть"}
+            )
+
+        .nav-links.product-catalog
+            +nav-links("Каталог продукции",
+            {item_link: "#", item_title: "Дизельные электростанции"},
+            {item_link: "#", item_title: "Дизельные приводы"},
+            {item_link: "#", item_title: "Контейнеры типа «СЕВЕР»"},
+            {item_link: "#", item_title: "Шкафы управления электростанциями"},
+            {item_link: "#", item_title: "Ящики ввода резерва"},
+            {item_link: "#", item_title: "Запасные части и комплектующие"},
+            {item_link: "#", item_title: "Расходные материалы"}
+            )
+
+        .nav-links.services
+            +nav-links("Услуги и сервис",
+            {item_link: "#", item_title: "Проектирование"},
+            {item_link: "#", item_title: "Производство"},
+            {item_link: "#", item_title: "Испытания под нагрузкой"},
+            {item_link: "#", item_title: "Доставка до объекта"},
+            {item_link: "#", item_title: "Монтаж оборудования"},
+            {item_link: "#", item_title: "Пуско-наладочные работы"},
+            {item_link: "#", item_title: "Гарантийное обслуживание"},
+            {item_link: "#", item_title: "Сервисное обслуживание"}
+            )
