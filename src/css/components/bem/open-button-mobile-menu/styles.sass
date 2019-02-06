@@ -1,0 +1,41 @@
+@import "../../vars"
+@import "../../mixins"
+
+.open-button-mobile-menu
+  cursor: pointer
+  height: 50px
+  position: absolute
+  top: 0
+  right: 15px
+
+  span
+    content: ""
+    display: none
+    width: 28px
+    height: 5px
+    top: 20px
+    background: $color-black
+    position: relative
+
+    &:before
+      content: ""
+      width: 28px
+      height: 5px
+      background: $color-black
+      position: absolute
+      top: -10px
+      left: 0
+
+    &:after
+      content: ""
+      width: 28px
+      height: 5px
+      background: $color-black
+      position: absolute
+      top: 10px
+      left: 0
+
+
+@media screen and (max-width: 1288px)
+  .open-button-mobile-menu span
+      display: block

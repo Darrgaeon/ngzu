@@ -6,5 +6,10 @@ section.nav-bar
             a(href="#")
                 +add_svg({class: "nav-bar__logo", icon: "logo"})
 
+        .logo-small.d-none
+            a(href="#")
+                +add_svg({class: "nav-bar__logo-small", icon: "logo-small"})
+
         include ./adaptive-menu
+        include ./open-button-mobile-menu
 

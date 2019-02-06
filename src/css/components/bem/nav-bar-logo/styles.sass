@@ -7,5 +7,24 @@
   top: -3px
   left: -1px
 
-.nav-bar__logo
-  size: 273px 37px
+  .nav-bar__logo
+    size: 273px 37px
+
+.logo-small
+  width: 100px
+  height: fit-content
+  position: relative
+  top: -3px
+  left: -1px
+
+  .nav-bar__logo-small
+    width: auto
+    height: 37px
+
+@media screen and (max-width: 400px)
+  .logo
+    display: none
+
+  .logo-small
+    display: block
+

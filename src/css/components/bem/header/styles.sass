@@ -1,0 +1,33 @@
+@import "../../vars"
+@import "../../mixins"
+
+.header
+  display: flex
+  flex-direction: column
+
+.header-utils
+  background: $color-black
+
+.header-utils__container
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.nav-bar
+  background: $color-white
+  box-shadow: 0px 0px 15px rgba(20, 29, 46, 0.02)
+
+.nav-bar__container
+  display: flex
+  align-items: center
+  position: relative
+
+
+@media screen and (max-width: 1288px)
+  .nav-bar
+    padding: 12px 0
+
+@media screen and (max-width: 730px)
+  .nav-bar
+    order: -1
+
