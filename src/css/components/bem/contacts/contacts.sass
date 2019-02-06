@@ -1,0 +1,28 @@
+@import "../../vars"
+@import "../../mixins"
+
+.contacts
+  display: flex
+  justify-content: space-between
+  margin-bottom: 61px
+
+.phone
+  span
+    font-size: 14px
+    line-height: (21/14)
+    color: #8C8C8C
+
+
+.phone__number
+  font-size: 17px / normal
+  font-weight: bold
+  color: $color-white
+  transition: $transition-duration
+
+  &:hover
+    color: darken($color-white, 10%)
+
+.text-color-white
+  font-size: 14px
+  line-height: (21/14)
+  color: $color-white

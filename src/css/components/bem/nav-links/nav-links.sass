@@ -1,0 +1,38 @@
+@import "../../vars"
+@import "../../mixins"
+
+.footer__container
+  display: flex
+
+.nav-links
+  h4
+    font-size: 19px
+    line-height: (24 / 19)
+    color: $color-white
+    margin-bottom: 16px
+    font-weight: bold
+    font-family: Ubuntu, sans-serif
+
+  ul
+    margin: 0
+    padding: 0
+
+    li
+      padding: 0
+      margin: 0
+      list-style: none
+
+      a
+        color: #C3C3C3
+        font-size: 14px
+        line-height: (32 / 14)
+        transition: $transition-duration
+
+        &:hover
+          color: $color-white
+
+.about-company
+ margin-right: 120px
+
+.product-catalog
+  margin-right: 101px

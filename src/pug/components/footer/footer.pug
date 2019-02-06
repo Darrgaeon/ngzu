@@ -37,3 +37,34 @@ section.footer
             {item_link: "#", item_title: "Гарантийное обслуживание"},
             {item_link: "#", item_title: "Сервисное обслуживание"}
             )
+
+        .contacts-container
+            h4 Контакты
+            p Новосибирский завод генераторных установок:
+            .contacts
+                .phone
+                    a(href="#").phone__number 8-800-500-0780
+                    .text-color-white Отдел оптовых продаж
+                    span Бесплатно по РФ
+
+                .phone
+                    a(href="#").phone__number (383) 238-07-75
+                    .text-color-white Сервисный центр
+                    span Новосибирск
+
+            .links
+                .link
+                    +add_svg({class: "link__icon link__mail-icon", icon: "mail"})
+                    a(href="mailto:zakaz@nzgu.ru") zakaz@nzgu.ru
+
+                .link
+                    +add_svg({class: "link__icon link__youtube-icon", icon: "youtube"})
+                    a(href="#") YouTube канал
+
+                .link.link__video
+                    +add_svg({class: "link__icon link__video-icon", icon: "video"})
+                    a(href="#") #[span Видеотрасляция из сборочного цеха]
+
+
+
+
