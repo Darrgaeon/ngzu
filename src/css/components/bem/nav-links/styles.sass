@@ -4,6 +4,7 @@
 .footer__container
   display: flex
   justify-content: space-between
+  flex-wrap: wrap
 
 .nav-links
   h4
@@ -30,11 +31,22 @@
         &:hover
           color: $color-white
 
-.about-company
- //margin-right: 120px
-
 .product-catalog
   margin-left: 19px
 
 .services
   margin-right: 29px
+
+
+@media screen and (max-width: 1080px)
+  .about-company, .product-catalog,
+  .services
+    flex: 1 1 50%
+    margin: 15px 0
+
+
+@media screen and (max-width: 470px)
+  .about-company, .product-catalog,
+  .services, .contacts-container
+    flex: 1 1 100%
+

@@ -6,7 +6,10 @@
     max-width: 300px
 
     .link
-      margin: 0 24px 0 0
+      margin: 0 24px 15px 0
+
+    .link:nth-child(2)
+      margin-right: 0
 
       a
         &:before
@@ -27,26 +30,33 @@
       top: 1px
 
     .link__video
-      margin-top: 15px
-      margin-right: 0
+      margin: 0
 
       a
-        color: #FFA036
-
         &:before
-          content: ""
-          width: 100%
-          height: 1px
-          background: #5E5E5E
-          position: absolute
-          top: 20px
-          left: 0
+          display: none
+
+        span
+          color: #FFA036
+          padding-bottom: 2px
+          padding-top: 2px
+          border-bottom: 1px solid #5E5E5E
           transition: $transition-duration
 
-        &:hover:before
-          background: #FFA036
+          &:hover
+            border-color: #FFA036
 
     .link__video-icon
       size: 17px 12px
       margin-right: 6px
       fill: #FFA036
+
+
+@media screen and (max-width: 1080px)
+  .contacts-container
+    flex: 1 1 50%
+    margin: 15px 0
+
+@media screen and (max-width: 470px)
+  .contacts-container
+    flex: 1 1 100%
