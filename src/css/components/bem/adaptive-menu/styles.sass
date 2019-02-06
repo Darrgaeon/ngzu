@@ -1,49 +1,50 @@
 @import "../../vars"
 @import "../../mixins"
 
-.nav-bar-menu
-  margin-right: 7px
+.nav-bar
+  .nav-bar-menu
+    margin-right: 7px
 
-.main-menu
-  margin: 0
-  padding: 0
-  display: flex
-
-  li
-    list-style: none
-
-    a
+    .main-menu
+      margin: 0
+      padding: 0
       display: flex
-      align-items: center
-      padding: 22px 27px 23px
-      position: relative
 
-      span
-        color: $color-black
-        font-weight: 500
-        font-size: 14px
-        z-index: 1
+      & > li
+        list-style: none
 
-      &:before
-        content: ""
-        height: 100%
-        width: 100%
-        background: $color-blue
-        position: absolute
-        top: 0
-        left: 0
-        display: none
-        transform: skew(-9.5deg, 0)
+        & > a
+          display: flex
+          align-items: center
+          padding: 22px 27px 23px
+          position: relative
 
-      &:hover
-        &:before
-          display: block
+          & > span
+            color: $color-black
+            font-weight: 500
+            font-size: 14px
+            z-index: 1
 
-        span
-          color: $color-white
+          &:before
+            content: ""
+            height: 100%
+            width: 100%
+            background: $color-blue
+            position: absolute
+            top: 0
+            left: 0
+            display: none
+            transform: skew(-9.5deg, 0)
 
-        .nav-bar-menu__burger
-          fill: $color-white
+          &:hover
+            &:before
+              display: block
+
+            span
+              color: $color-white
+
+            .nav-bar-menu__burger
+              fill: $color-white
 
 
 .nav-bar-menu__burger
@@ -54,5 +55,6 @@
 
 
 @media screen and (max-width: 1288px)
-  .nav-bar-menu
-    display: none
+  .nav-bar
+    .nav-bar-menu
+      display: none

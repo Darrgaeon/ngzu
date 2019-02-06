@@ -11,7 +11,7 @@ function init() {
     require("uikit/dist/js/uikit.min");
 
     $(document).ready(function () {
-
+        require("./components/mobile-menu")();
     });
 }
 
