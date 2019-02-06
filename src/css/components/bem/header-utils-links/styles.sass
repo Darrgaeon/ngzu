@@ -39,6 +39,7 @@
 .header-utils
   .link
     a
+
       &:before
         content: ""
         width: 100%
@@ -51,3 +52,38 @@
 
       &:hover:before
         background: $color-white
+
+@media screen and (max-width: 1060px)
+  .header-utils__container
+    .links
+      display: none
+
+  .contact-phone
+    margin-right: 0
+
+@media screen and (max-width: 730px)
+  .contact-phone
+    display: none
+
+@media screen and (max-width: 620px)
+  .header-utils__container
+    .search-block label input
+        max-width: 100px
+
+    .comparison
+      margin-right: auto
+
+@media screen and (max-width: 500px)
+  .header-utils__container
+    padding-top: 15px
+    padding-bottom: 15px
+    form
+      flex: 1 1 100%
+      order: -1
+      margin-bottom: 20px
+
+    .call-me
+      margin-left: auto
+
+    .comparison
+      margin: 0 auto 0 15px
