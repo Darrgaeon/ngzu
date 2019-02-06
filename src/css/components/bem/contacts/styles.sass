@@ -3,21 +3,31 @@
 
 .contacts
   display: flex
-  justify-content: space-between
-  margin-bottom: 61px
+  margin-bottom: 63px
+  position: relative
+  left: -1px
 
 .phone
+  margin: 5px 17px 0 18px
   span
     font-size: 14px
     line-height: (21/14)
     color: #8C8C8C
 
+.phone:first-child
+  margin-left: 0
+
+.phone:last-child
+  margin-top: 3px
+  margin-right: 0
 
 .phone__number
+  display: block
   font-size: 17px / normal
   font-weight: bold
   color: $color-white
   transition: $transition-duration
+  margin-bottom: 4px
 
   &:hover
     color: darken($color-white, 10%)
