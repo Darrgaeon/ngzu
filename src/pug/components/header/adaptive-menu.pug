@@ -5,7 +5,7 @@ include ../../mixins/svg_sprite
         li
             a(href="#") #[span Главная]
         li
-            a(href="#" role="dropdown")
+            a(href="#" role="dropdown" uk-toggle="target: #dropdown-menu")
                 +add_svg({class: "nav-bar-menu__burger", icon: "burger"})
                 span Продукция завода
         li

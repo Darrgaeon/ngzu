@@ -14,13 +14,6 @@
     line-height: (21/14)
     color: #8C8C8C
 
-.phone:first-child
-  margin-left: 0
-
-.phone:last-child
-  margin-top: 3px
-  margin-right: 0
-
 .phone__number
   display: block
   font-size: 17px / normal
@@ -31,6 +24,17 @@
 
   &:hover
     color: darken($color-white, 10%)
+
+.phone:first-child
+  margin-left: 0
+
+.phone:last-child
+  margin-top: 3px
+  margin-right: 0
+
+  .phone__number
+    margin-bottom: 7px
+
 
 .text-color-white
   font-size: 14px

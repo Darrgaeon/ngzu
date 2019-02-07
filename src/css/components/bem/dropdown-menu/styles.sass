@@ -1,0 +1,62 @@
+@import "../../vars"
+@import "../../mixins"
+
+.dropdown-menu
+  width: fit-content
+
+.nav-bar-items-dropdown-container_block
+  display: flex
+  flex-wrap: wrap
+  max-width: 860px
+  height: fit-content
+
+.nav-bar-item-dropdown-container__block
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  flex: 1 1 30%
+  margin: 15px
+
+  h4
+    font-size: 16px
+    padding-bottom: 3px
+    border-bottom: 1px solid $color-grey-dark
+
+  p
+    font-size: 14px
+    margin: 15px 0
+
+.button-container-dropdown-menu
+  .button
+    padding: 20px 30px
+
+
+@media screen and (min-width: 720px)
+  .nav-bar-item-dropdown-container__block:nth-child(1),
+  .nav-bar-item-dropdown-container__block:nth-child(4)
+    margin-left: 0
+
+  .nav-bar-item-dropdown-container__block:nth-child(3),
+  .nav-bar-item-dropdown-container__block:nth-child(6)
+    margin-right: 0
+
+@media screen and (max-width: 500px)
+  .nav-bar-item-dropdown-container__block
+    flex: 1 1 50%
+
+  .button-container-dropdown-menu
+    width: 100%
+    text-align: center
+    margin-top: 30px
+
+    .button
+      padding: 20px 11px
+
+
+//.icon__more-arrow
+  width: 16px
+  height: 16px
+  fill: $color-blue
+  position: absolute
+  top: 0
+  left: 0

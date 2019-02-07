@@ -33,7 +33,7 @@
       <div class="nav-bar-menu d-flex ml-auto">
         <ul class="main-menu">
           <li><a href="#"><span>Главная</span></a></li>
-          <li><a href="#" role="dropdown">
+          <li><a href="#" role="dropdown" uk-toggle="target: #dropdown-menu">
                     <svg class="nav-bar-menu__burger">
                       <use xlink:href="svg/sprite.svg#svg--burger"></use>
                     </svg><span>Продукция завода</span></a></li>
@@ -102,7 +102,7 @@
           <div class="nav-bar-menu d-flex ml-auto">
             <ul class="main-menu">
               <li><a href="#"><span>Главная</span></a></li>
-              <li><a href="#" role="dropdown">
+              <li><a href="#" role="dropdown" uk-toggle="target: #dropdown-menu">
                             <svg class="nav-bar-menu__burger">
                               <use xlink:href="svg/sprite.svg#svg--burger"></use>
                             </svg><span>Продукция завода</span></a></li>
@@ -115,6 +115,64 @@
           </div><a class="open-button-mobile-menu" href="#"><span></span></a>
         </div>
       </section>
+      <div id="dropdown-menu" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body dropdown-menu">
+          <div class="nav-bar-items-dropdown-container_block">
+            <div class="nav-bar-item-dropdown-container__block">
+              <h4>Дизельные электростанции и дизельные приводы</h4>
+              <div class="nav-bar-item-dropdown-container__block-items">
+                <p>Мощность <a href="#">10-25 кВт</a>, <a href="#">25-60 кВт</a>, <a href="#">60-100 кВт</a>, <a href="#">100-1000 кВт</a></p>
+                <p>Двигатель <a href="#">ЯМЗ</a>, <a href="#">ЕД480</a>, <a href="#">ЕД490</a>, <a href="#">Deutz</a>, <a href="#">Steyr</a>, <a href="#">Doosan</a>, <a href="#">Ricardo</a>, <a href="#">Shanghai Diesel</a>, <a href="#">Moteurs Baudouin</a></p>
+              </div>
+            </div>
+            <div class="nav-bar-item-dropdown-container__block">
+              <h4>Шкафы управл. генераторамии и электростанциями</h4>
+              <div class="nav-bar-item-dropdown-container__block-items">
+                <p><a href="#">1-я степень автоматизации</a></p>
+                <p><a href="#">2-я степень автоматизации</a></p>
+                <p><a href="#">Специальные шкафы управления</a></p>
+                <p><a href="#">Блок заряда АКБ</a></p>
+              </div>
+            </div>
+            <div class="nav-bar-item-dropdown-container__block">
+              <h4>Запасные части и комплектующие</h4>
+              <div class="nav-bar-item-dropdown-container__block-items">
+                <p>Двигатели <a href="#">ЯМЗ</a>, <a href="#">ЕД480</a>, <a href="#">ЕД490</a>, <a href="#">Deutz</a>, <a href="#">Steyr</a>, <a href="#">Doosan</a>, <a href="#">Ricardo</a>, <a href="#">Shanghai Diesel</a>, <a href="#">Moteurs Baudouin</a></p>
+                <p><a href="#">Генераторы</a></p>
+                <p><a href="#">Кожухи, рамы</a></p>
+                <p><a href="#">Электрические комплектующие</a></p>
+                <p><a href="#">Прочее
+                    <!--+add_svg({class: "icon__more-arrow", icon: "more-arrow"})--></a></p>
+              </div>
+            </div>
+            <div class="nav-bar-item-dropdown-container__block">
+              <h4>Контейнеры типа «СЕВЕР»</h4>
+              <div class="nav-bar-item-dropdown-container__block-items">
+                <p><a href="#">ДГУ контейнерного исполнения 10-100 кВт</a></p>
+                <p><a href="#">ДГУ контейнерного исполнения до 500 кВт</a></p>
+              </div>
+            </div>
+            <div class="nav-bar-item-dropdown-container__block">
+              <h4>Ящики ввода резерва</h4>
+              <div class="nav-bar-item-dropdown-container__block-items">
+                <p><a href="#">250 Ампер (до 140 кВт)</a></p>
+                <p><a href="#">500-630 Ампер (до 350 кВт)</a></p>
+              </div>
+            </div>
+            <div class="nav-bar-item-dropdown-container__block">
+              <h4>Расходные материалы</h4>
+              <div class="nav-bar-item-dropdown-container__block-items">
+                <p><a href="#">Фильтры</a></p>
+                <p><a href="#">Ремни</a></p>
+                <p><a href="#">Смазочные материалы</a></p>
+                <p><a href="#">Запасные части для ДВС</a></p>
+                <p><a href="#">Прочее</a></p>
+              </div>
+            </div>
+            <div class="button-container-dropdown-menu"><a class="button button-blue" href="#">Индивидуальный проект</a></div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="content">
       <ul>
