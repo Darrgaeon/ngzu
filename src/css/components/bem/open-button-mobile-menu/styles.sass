@@ -25,6 +25,7 @@
       position: absolute
       top: -10px
       left: 0
+      transition: .3s
 
     &:after
       content: ""
@@ -34,6 +35,23 @@
       position: absolute
       top: 10px
       left: 0
+      transition: .3s
+
+
+.mobile-menu-opened
+  span
+    background: inherit
+
+    &:before
+      transform: rotate(48deg)
+      top: 2px
+      left: 0
+
+    &:after
+      transform: rotate(134deg)
+      top: 2px
+      left: 0
+
 
 
 @media screen and (max-width: 1288px)

@@ -5,12 +5,20 @@ module.exports = function () {
 
     //open mobile-menu
     $mobileMenuButtonOpen.on("click", function () {
+        $mobileMenuButtonOpen.addClass("mobile-menu-opened");
         $mobileMenu.css("right", "0");
     });
 
     //close mobile-menu
     $mobileMenuButtonClose.on("click", function () {
         $mobileMenu.css("right", "-290px");
+        $mobileMenuButtonOpen.removeClass("mobile-menu-opened");
+    });
+
+    //close mobile-menu if click a child elements
+    $mobileMenu.on("click", ".main-menu li", function () {
+        $mobileMenu.css("right", "-290px");
+        $mobileMenuButtonOpen.removeClass("mobile-menu-opened");
     });
 
     //close mobile-menu
