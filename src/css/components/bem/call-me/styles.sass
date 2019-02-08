@@ -10,9 +10,14 @@
   cursor: pointer
   transition: $transition-duration
   font-size: 13px
-  color: $color-white
   position: relative
   top: -1px
+
+  &__text
+    color: $color-white
+
+    &:hover
+      color: $color-white
 
   &:hover
     background: lighten($color-blue, 5%)

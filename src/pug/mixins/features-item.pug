@@ -1,0 +1,12 @@
+include ../mixins/svg_sprite
+
+mixin features-item(image, title, text, link)
+    .features-item
+        .features-item-picture
+            +add_svg({class: "features-item-picture__icon", icon: image})
+
+        h4= title
+        p= text
+        .container-button
+            a(href=link).button.button-blue Перейти
+
