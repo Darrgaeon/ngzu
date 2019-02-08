@@ -1,0 +1,54 @@
+@import "../../vars"
+@import "../../mixins"
+
+.features
+  display: flex
+  flex-wrap: wrap
+  padding: 35px 21px 35px 35px
+  margin-bottom: 51px
+
+.features-item
+  lost-column: 1/4
+  min-height: 415px
+  border: 1px solid #ecf0f1
+  padding: 30px
+  display: flex
+  flex-direction: column
+  align-items: end
+
+  .features-item-picture
+    size: 55px 55px
+    margin-bottom: 22px
+    position: relative
+    left: 2px
+
+    .features-item-picture__icon
+      width: 100%
+      height: 100%
+      fill: #0097E3
+
+  h4
+    margin-bottom: 7px
+    margin-right: 25px
+
+  p
+    font-size: 16px
+    font-weight: normal
+    line-height: (23/16)
+    color: $color-black
+    margin-bottom: 24px
+    margin-right: 10px
+
+  .container-button
+    color: $color-white
+
+
+
+
+.features-item:nth-child(1n)
+  margin-right: 25px
+  margin-bottom: 24px
+
+.features-item:nth-child(4n)
+  margin-right: 0
+  margin-left: 0
