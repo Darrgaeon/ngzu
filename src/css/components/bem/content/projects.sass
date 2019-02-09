@@ -2,6 +2,10 @@
 
 .content-card
   .projects-slider-container
+
+
+
+
     .projects
       &-nav
         max-width: 32%
@@ -17,6 +21,16 @@
           a
             display: none
 
+        @media screen and (max-width: 700px)
+          position: absolute
+          top: 80px
+          height: 130px
+
+        @media screen and (max-width: 400px)
+          position: absolute
+          top: 80px
+          height: 100px
+
         &__image
           @media screen and (max-width: 850px)
             margin: 20px 20px (20px / 1.75)
@@ -26,12 +40,12 @@
 
           img
             @media screen and (max-width: 780px)
-              width: 100px
+              min-width: 100px
               height: 100px
 
             @media screen and (max-width: 600px)
-              width: 64px
-              height: 64px
+              min-width: 80px
+              height: 80px
 
       &-gallery
         @media screen and (max-width: 600px)

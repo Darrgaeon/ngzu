@@ -1,6 +1,9 @@
 @import "../../vars"
 @import "../../mixins"
 
+.container-button
+  position: relative
+
 .button
   display: block
   color: $color-white
@@ -9,6 +12,8 @@
   font-weight: 500
   font-size: 15px / normal
   padding: 18px 80px 20px 79px
+  position: relative
+  z-index: 2
 
   &:hover
     color: $color-white

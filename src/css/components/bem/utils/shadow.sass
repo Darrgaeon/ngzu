@@ -1,0 +1,61 @@
+@import "../../vars"
+@import "../../mixins"
+
+.button
+  &-shadow
+    display: block
+    width: calc(100% - 16px)
+    height: calc(100% - 36px)
+    position: absolute
+    top: 36px
+    left: 8px
+
+    // Common styles
+    filter: blur(20px)
+    border-radius: 3px
+    transform: matrix(-1, 0, 0, 1, 0, 0)
+
+    transition-duration: $transition-duration
+
+    // Default colors
+    &--blue
+      background: #5AC9FF
+
+    &--orange
+      background: #FFC385
+
+    &--bordered
+      background: none
+
+  // Colors on hover
+  @media not all and (pointer: coarse)
+    &:hover + &-shadow
+      &--blue
+        background: #FFC385
+
+      &--orange
+        background: #5AC9FF
+
+      &--bordered
+        background: #5AC9FF
+
+  @media screen and (min-width: 1025px)
+    &:hover + &-shadow
+      &--blue
+        background: #FFC385
+
+      &--orange
+        background: #5AC9FF
+
+      &--bordered
+        background: #5AC9FF
+
+  &:active + &-shadow
+    &--blue
+      background: #FFC385
+
+    &--orange
+      background: #5AC9FF
+
+    &--bordered
+      background: #5AC9FF
