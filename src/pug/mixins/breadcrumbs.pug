@@ -1,0 +1,22 @@
+include svg_sprite
+
+mixin add_breadcrumbs(array)
+    nav.breadcrumbs
+        ul
+            a(href="#").breadcrumbs-home
+                +add_svg({class: "breadcrumbs__icon", icon: "breadcrumbs_house"})
+
+            if array.length > 1
+                each item in array.slice(0, array.length - 1)
+                    li
+                        a(href=item.link || "#")= item.text
+                li
+                    span= array[array.length - 1].text
+
+            else if array.length === 1
+                li
+                    span= array[array.length - 1].text
+
+        a(href="#").go-back
+            +add_svg({class: "go-back__icon", icon: "next-arrow"})
+            span Назад

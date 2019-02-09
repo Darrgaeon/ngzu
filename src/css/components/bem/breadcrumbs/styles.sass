@@ -1,0 +1,69 @@
+@import "../../vars"
+
+.breadcrumbs
+  &-home
+    display: flex
+    justify-content: center
+    align-items: center
+
+  @media not all and (pointer: coarse)
+    &-home:hover &__icon
+      fill: $color-black
+
+  @media screen and (min-width: 1025px)
+    &-home:hover &__icon
+      fill: $color-black
+
+  &-home:active &__icon
+    fill: $color-black
+
+  & > ul
+    display: flex
+    align-items: center
+
+    flex-wrap: wrap
+
+    padding: 0
+    margin: 0
+    list-style: none
+
+    & > li
+      color: $color-grey-light
+      font-size: 13px
+
+      margin-right: 4px
+
+      &:last-child
+        margin-right: 0
+        color: inherit
+
+      a
+        color: inherit
+        text-decoration: none !important
+        padding: 3px
+        transition-duration: $transition-duration
+
+        @media not all and (pointer: coarse)
+          &:hover
+            color: $color-black
+
+        @media screen and (min-width: 1025px)
+          &:hover
+            color: $color-black
+
+        &:active
+          color: $color-black
+
+      & + li:before
+        content: "/"
+        margin-right: 5px
+        color: $color-grey-light
+
+  &__icon
+    width: 16px
+    height: 16px
+    fill: $color-grey-light
+
+    margin-right: 3px
+
+    transition-duration: $transition-duration

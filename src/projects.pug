@@ -1,9 +1,26 @@
 extends ./pug/base_template
-include ./pug/mixins/typography
+include ./pug/mixins/breadcrumbs
 
 block title
     title Starter Template
 
 block content
     .container
+        .content-card
+            .content-heading
+                +add_breadcrumbs([
+                    {text: "Каталог продукции"},
+                    {text: "Выполненные проекты"}
+                ])
+                //nav.breadcrumbs
+                //    ul
+                //        a(href="#")
+                //            +add_svg({class: "content-heading-breadcrumbs__icon", icon: "breadcrumbs_house"})
+                //        li
+                //            a(href="#") Каталог продукции /
+                //        li
+                //            a(href="#") Выполненные проекты
+
+
+
         include pug/components/features/features
