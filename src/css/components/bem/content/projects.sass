@@ -1,0 +1,38 @@
+@import "../../vars"
+
+.content-card
+  .projects-slider-container
+    .projects
+      &-nav
+        max-width: 32%
+        //width: 312px/1230px * 100%
+        height: 208px
+        position: relative
+        top: -1px
+
+        @media screen and (max-width: 1100px)
+          width: auto
+          padding: 0
+
+          a
+            display: none
+
+        &__image
+          @media screen and (max-width: 850px)
+            margin: 20px 20px (20px / 1.75)
+
+          @media screen and (max-width: 500px)
+            margin: 15px 15px (15px / 1.75)
+
+          img
+            @media screen and (max-width: 780px)
+              width: 100px
+              height: 100px
+
+            @media screen and (max-width: 600px)
+              width: 64px
+              height: 64px
+
+      &-gallery
+        @media screen and (max-width: 600px)
+          width: 300px !important

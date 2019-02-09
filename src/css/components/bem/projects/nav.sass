@@ -1,0 +1,150 @@
+@import "../../vars"
+
+.projects-nav
+  background: #E4F0FC
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+  border-radius: 200px
+  color: $color-blue
+  text-decoration-color: #97DCFF
+
+  cursor: pointer
+
+  @media screen and (max-width: 700px)
+    border-left: none
+    border-right: none
+    border-top: 7px solid #FFFFFF
+    border-bottom: 7px solid #FFFFFF
+
+  @media not all and (pointer: coarse)
+    &:hover
+      a
+        text-decoration-color: #38BCFF
+
+  @media screen and (min-width: 1025px)
+    &:hover
+      a
+        text-decoration-color: #38BCFF
+
+  &:active
+    a
+      text-decoration-color: #38BCFF
+
+  a
+    color: inherit
+
+    text-decoration: underline
+    text-decoration-color: inherit
+
+    display: block
+    max-width: 102px
+    text-align: center
+
+    margin-right: 22px
+    margin-bottom: 6px
+
+    font-size: 16px
+
+    transition-duration: $transition-duration
+
+  &-prev
+    border-radius: 0 200px 200px 0
+
+    @media screen and (max-width: 700px)
+      position: absolute
+      left: 0
+      top: calc(50% - 140px / 2)
+
+      z-index: 2
+
+      border-right: 7px solid #FFFFFF
+
+    @media screen and (max-width: 600px)
+      // 40px is difference in image padding
+      top: calc(50% - (115px / 2 + 40px / 2))
+
+    @media screen and (max-width: 400px)
+      top: 20px
+
+  &-next
+    flex-direction: row-reverse
+    border-radius: 200px 0 0 200px
+
+    @media screen and (max-width: 700px)
+      position: absolute
+      right: 0
+      top: calc(50% - 140px / 2)
+
+      z-index: 2
+
+      border-left: 7px solid #FFFFFF
+
+    @media screen and (max-width: 600px)
+      // 40px is difference in image padding
+      top: calc(50% - (115px / 2 + 40px / 2))
+
+    @media screen and (max-width: 400px)
+      top: 20px
+
+    a
+      margin-right: 0
+      margin-left: 22px
+      line-height: 24px
+
+  &-next &__orange-circle
+    left: unset
+    right: -8px
+
+  &__image
+    position: relative
+    top: 0
+    left: 0
+    margin: 35px 35px 29px
+
+    transition-duration: $transition-duration
+
+    img
+      min-width: 138px
+      height: 138px
+      border-radius: 100%
+      object-fit: cover
+
+  @media not all and (pointer: coarse)
+    &:hover &__image
+      top: -4px
+
+  @media screen and (min-width: 1025px)
+    &:hover &__image
+      top: -4px
+
+  &:active &__image
+    top: -4px
+
+  &__orange-circle
+    position: absolute
+    bottom: 1px
+    left: -8px
+
+    width: 54px
+    height: 54px
+
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    border-radius: 100%
+    color: #FFFFFF
+
+    font-size: 14px
+    line-height: 17px / 14px * 1em
+
+    background: linear-gradient(147.24deg, #FF682D 14.75%, #FFA800 87.17%)
+
+    @media screen and (max-width: 600px)
+      width: 40px
+      height: 40px
+
+      font-size: 10px

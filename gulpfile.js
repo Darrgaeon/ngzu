@@ -51,7 +51,7 @@ const config = {
         dist: 'docs'  // "Docs" because it's supports by GitHub Pages
     },
 
-    // This var is for activating the source project-map
+    // This var is for activating the source projects-map
     isDevelopment: argv.N || argv['nosourcemaps'] ? false : true,
 
     plumber: {
@@ -61,7 +61,7 @@ const config = {
 
 config.browserify = {
     // We're use inline sourcemaps, because when we are trying to exclude them
-    // from file to *.project-map one get a gigantic CPU usage on page reload in browser
+    // from file to *.projects-map one get a gigantic CPU usage on page reload in browser
     //
     // So... When we'll run build task with "-N" parameter the output will be clean.
     debug: config.isDevelopment,

@@ -1,0 +1,63 @@
+.projects-slider-container
+    .projects-nav.projects-nav-prev
+        a(href="#") Предыдущий проект
+
+        .projects-nav__image
+            // Картинка выступает заглушкой, после того, как плагин
+                инициализируется в путь подставится ссылка из data-slider-img
+                и воспроизведется анимация
+
+                Текст тоже простая заглушка, в нем может быть что угодно.
+            img(src="img/welding-gallery.jpg" alt="picture" data-rjs="2")
+            .projects-nav__orange-circle Loading
+
+    .projects-gallery.slick-gallery
+        // Gallery slide
+        .projects-gallery__item(
+        data-slider-img="img/welding-gallery.jpg"
+        data-slider-power="2 375"
+        data-slider-heading="Промышленность"
+        data-slider-description="<p>Дизельная электростанция для Омского молокозавода</p>"
+        )
+            img(src="img/welding-gallery.jpg" alt="picture" data-rjs="2")
+            .projects-nav__orange-circle Общая мощность #[strong 2 375 кВт]
+        // / Gallery slide
+
+        // Gallery slide
+        .projects-gallery__item(
+        data-slider-img="img/welding-gallery.jpg"
+        data-slider-power="2 400"
+        data-slider-heading="Lorem"
+        data-slider-description="<p>Lorem2</p>"
+        )
+            img(src="img/welding-gallery.jpg" alt="picture" data-rjs="2")
+            .projects-nav__orange-circle Общая мощность #[strong 2 400 кВт]
+        // / Gallery slide
+
+        // Gallery slide
+        .projects-gallery__item(
+        data-slider-img="img/welding-gallery.jpg"
+        data-slider-power="2 500"
+        data-slider-heading="Lorem3"
+        data-slider-description="<p>Lorem3</p>"
+        )
+            img(src="img/welding-gallery.jpg" alt="picture" data-rjs="2")
+            .projects-nav__orange-circle Общая мощность #[strong 2 500 кВт]
+        // / Gallery slide
+
+    .projects-nav.projects-nav-next
+        a(href="#") Следующий проект
+
+        .projects-nav__image
+            // Картинка выступает заглушкой, после того, как плагин
+                инициализируется в путь подставится ссылка из data-slider-img
+                и воспроизведется анимация
+
+                Текст тоже простая заглушка, в нем может быть что угодно.
+            img(src="img/welding-gallery.jpg" alt="picture" data-rjs="2")
+            .projects-nav__orange-circle Loading
+
+// Тут данные подставляет JS из галлереи .projects-gallery
+.content-description-meta-common-blocks.text-align-center.projects-slider-info
+    //- h3 Промышленность
+    //- p Дизельная электростанция для Омского молокозавода

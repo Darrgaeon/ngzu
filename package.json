@@ -17,7 +17,8 @@
     "normalize.css": "^8.0.1",
     "retinajs": "https://github.com/strues/retinajs",
     "svg4everybody": "^2.1.9",
-    "uikit": "^3.0.0-rc.26"
+    "uikit": "^3.0.0-rc.26",
+    "slick-carousel": "git+https://github.com/kenwheeler/slick.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

@@ -9,10 +9,12 @@ function init() {
     require("retinajs/dist/retina");
     require("uikit/dist/js/uikit");
     require("uikit/dist/js/uikit.min");
+    require("slick-carousel/slick/slick");
 
     $(document).ready(function () {
         require("./components/mobile-menu")();
         require("./components/maps")();
+        require("./components/project-gallery")();
     });
 }
 
