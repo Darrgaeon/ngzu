@@ -12,15 +12,18 @@ block content
                     {text: "Каталог продукции"},
                     {text: "Выполненные проекты"}
                 ])
-                //nav.breadcrumbs
-                //    ul
-                //        a(href="#")
-                //            +add_svg({class: "content-heading-breadcrumbs__icon", icon: "breadcrumbs_house"})
-                //        li
-                //            a(href="#") Каталог продукции /
-                //        li
-                //            a(href="#") Выполненные проекты
+                h2 Выполненные проекты
+
+            .content-description
+                p Самая большая по территории страна мира - Россия, её площадь на 2018 год (после присоединения Крыма) составляет 17 124 442 км. Россия находится одновременно в Европе и в Азии. Площадь европейской части России около 3,986 млн. км, что гораздо больше, чем площадь любой европейской страны. Европейская часть России составляет около 40% территории всей Европы.
+                #map(
+                data-map-center-lng="56.008420"
+                data-map-center-lat="40.493787"
+                data-map-zoom="7.275115259342524"
+                )
 
 
 
-        include pug/components/features/features
+
+
+                include pug/components/features/features

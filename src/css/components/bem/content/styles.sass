@@ -3,9 +3,28 @@
 
 .content
   background: #F7F7F7
+
   &-heading
     background: $color-white
 
+    h2
+      font-weight: bold
+      margin-top: 28px
+
 
   &-description
+    position: relative
+    margin-top: 30px
+    padding-top: 9px
 
+    &:before
+      content: ""
+      width: calc(100% + 35px * 2)
+      height: 1px
+      background: $color-grey
+      position: absolute
+      top: -11px
+      left: -35px
+
+    p
+      line-height: 1.525

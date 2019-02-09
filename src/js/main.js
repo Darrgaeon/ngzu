@@ -6,12 +6,13 @@ function init() {
     this.jQuery = this.$;
 
     require("svg4everybody/dist/svg4everybody")();
-    // require("retinajs/dist/retina");
+    require("retinajs/dist/retina");
     require("uikit/dist/js/uikit");
     require("uikit/dist/js/uikit.min");
 
     $(document).ready(function () {
         require("./components/mobile-menu")();
+        require("./components/maps")();
     });
 }
 
