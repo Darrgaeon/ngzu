@@ -1,0 +1,14 @@
+include ../mixins/svg_sprite
+
+mixin add_industry-item(image, text, power)
+    .industry-item
+        a(href="#")
+            .industry-item__picture
+                img(src=image data-rjs="2" alt="Photo")
+
+            .industry-item__description
+                p= text
+
+            .industry-item__footer
+                span Общая мощность
+                span= power

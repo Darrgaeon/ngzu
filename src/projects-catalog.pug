@@ -1,0 +1,28 @@
+extends ./pug/base_template
+include ./pug/mixins/breadcrumbs
+include ./pug/mixins/industry-item
+
+block title
+    title Starter Template
+
+block content
+    .container
+        .content-card
+            .content-heading
+                +add_breadcrumbs([
+                    {text: "Каталог продукции"},
+                    {text: "Выполненные проекты"},
+                    {text: "Промышленность"}
+                ])
+                h2 Промышленность
+
+        section.industry-section
+            .industry
+                 each _ in Array(4*3)
+                     +add_industry-item(
+                     "img/industry.jpg",
+                     "ДГУ в контейнере «СЕВЕР» для Илимского ЦБК",
+                     "375 кВт"
+                     )
+
+
