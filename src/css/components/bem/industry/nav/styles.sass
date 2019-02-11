@@ -1,0 +1,92 @@
+@import "../../../vars"
+
+.industry-nav
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+.nav-pages
+  display: flex
+  flex-wrap: wrap
+
+.nav-pages-button
+  padding: 16px 27px 16px 29px
+  min-width: 124px
+  background: $color-white
+  line-height: normal
+  font-size: 16px
+  color: #202A3B
+
+  &:hover
+    color: $color-blue
+
+.nav-pages-button-arrow
+  &:hover
+    .nav-pages-button__icon
+      fill: $color-blue
+
+
+.disabled
+  cursor: not-allowed
+  color: $color-grey-light
+
+  &:hover
+    color: $color-grey-light
+
+
+.nav-pages-button--next
+  .nav-pages-button__icon
+    transform: rotate(180deg)
+
+.nav-pages-button__icon
+  width: 12px
+  height: 12px
+
+.nav-pages
+  ul
+    display: flex
+    flex-wrap: wrap
+    margin: 0 25px 0 24px
+    padding: 0
+
+    .active
+      background: $color-blue
+      a
+        color: $color-white
+
+    li
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0
+      padding: 0
+      list-style: none
+      width: 52px
+      height: 51px
+      position: relative
+      background: $color-white
+      font-size: 18px
+      line-height: normal
+      cursor: pointer
+
+      &:hover
+        a
+          color: $color-blue
+
+      &:before
+        content: ""
+        width: 1px
+        height: 100%
+        background: $color-grey
+        position: absolute
+        top: 0
+        right: 0
+
+      a
+        color: $color-black
+
+
+    li:last-child
+      &:before
+        display: none
+

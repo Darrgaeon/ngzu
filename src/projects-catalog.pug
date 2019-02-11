@@ -16,13 +16,7 @@ block content
                 ])
                 h2 Промышленность
 
-        section.industry-section
-            .industry
-                 each _ in Array(4*3)
-                     +add_industry-item(
-                     "img/industry.jpg",
-                     "ДГУ в контейнере «СЕВЕР» для Илимского ЦБК",
-                     "375 кВт"
-                     )
+
+        include ./pug/components/projects-catalog/industry
 
 
