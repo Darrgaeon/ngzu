@@ -8,6 +8,7 @@
 .nav-pages
   display: flex
   flex-wrap: wrap
+  justify-content: center
 
 .nav-pages-button
   padding: 16px 27px 16px 29px
@@ -89,4 +90,32 @@
     li:last-child
       &:before
         display: none
+
+
+@media screen and (max-width: 760px)
+  .nav-pages
+    ul
+      margin: 0
+
+    &-button
+      margin: 15px
+
+      &--start
+        order: -1
+
+      &--end
+        order: -1
+
+@media screen and (max-width: 480px)
+  .nav-pages
+    ul
+      li
+        width: 36px
+        height: 36px
+
+    &-button
+      margin: 15px
+
+      &--end
+        order: 0
 

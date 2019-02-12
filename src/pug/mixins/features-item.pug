@@ -1,6 +1,6 @@
 include ../mixins/svg_sprite
 
-mixin add_features-item(image, title, text, link)
+mixin add_features-item(image, title, text, link, buttonText, className, classShadowNone)
     .features-item
         .features-item-picture
             +add_svg({class: "features-item-picture__icon", icon: image})
@@ -8,7 +8,11 @@ mixin add_features-item(image, title, text, link)
         h4= title
         p= text
         .container-button.mt-auto
-            a(href=link).button.button-blue Перейти
+            a(
+            href=link
+            class=className
+            ).button.button-blue
+                span= buttonText
 
-            .button-shadow.button-shadow--blue
+            .button-shadow.button-shadow--blue(class=classShadowNone)
 
