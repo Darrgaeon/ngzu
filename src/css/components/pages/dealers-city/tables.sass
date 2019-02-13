@@ -22,7 +22,7 @@
 
       tr:nth-child(3)
         td
-          padding-bottom: 5px
+          padding-bottom: 4px
 
     tr:last-child
       border-bottom: none
@@ -80,3 +80,15 @@
         &:hover
           color: #FF6B00
 
+@media screen and (max-width: 668px)
+  .table
+    &-contacts
+      margin-left: 0
+
+      thead
+        display: none
+
+      tbody
+        td
+          display: flex
+          flex-direction: column
