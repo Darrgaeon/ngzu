@@ -1,0 +1,82 @@
+@import "../../vars"
+
+.table
+  &-contacts
+    flex: 1
+    margin-left: 33px
+    position: relative
+    top: -3px
+
+    tr
+      border-bottom: 1px solid $color-grey
+
+      th
+        font-weight: 500
+        line-height: normal
+        font-size: 18px
+        color: $color-black
+
+    tbody
+      td
+        padding: 26px 0 9px 1px
+
+      tr:nth-child(3)
+        td
+          padding-bottom: 5px
+
+    tr:last-child
+      border-bottom: none
+
+    tr td:last-child
+      white-space: nowrap
+      width: 1%
+
+  &-address-link__icon
+    width: 16px
+    height: 16px
+    fill: $color-blue
+    margin-right: 7px
+
+  &-content
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    min-height: 50px
+
+    span, a
+      font-size: 16px
+      color: $color-black
+
+      &:hover
+        color: #FF6B00
+
+
+    &--address
+      span
+        line-height: normal
+        padding-bottom: 10px
+
+        &:hover
+          color: inherit
+
+      a
+        display: flex
+        span
+          line-height: (14/14)
+          font-size: 14px
+          color: $color-blue
+
+    &--phones
+      a
+        line-height: (26/16)
+
+    &--credits
+      a
+        line-height: (25/16)
+
+      a:last-child
+        color: $color-blue
+
+        &:hover
+          color: #FF6B00
+

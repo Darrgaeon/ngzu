@@ -1,0 +1,39 @@
+include ../../mixins/svg_sprite
+
+nav.nav-dealers
+    ul
+        li
+            a(href="#") Отделы продаж
+        li
+            a(href="#") Ремонт и техническое обслуживание
+        li
+            a(href="#") Запчасти
+        li.active
+            a(href="#") Где купить
+
+table.table-contacts
+    thead
+        tr
+            th Адрес
+            th Телефоны
+            th Сайт, почта
+
+    tbody
+        each _ in Array(3)
+            tr
+                td
+                    .table-content.table-content--address
+                        span Сеть магазинов «Каскад»
+                        a(href="#").table-address-link
+                            +add_svg({class: "table-address-link__icon", icon: "map-marker"})
+                            span ул. Пушкина, 213, г
+
+                td
+                    .table-content.table-content--phones
+                        a(href="tel:+7 3902 305 255") +7 (3902) 305-255
+                        a(href="tel:+7 800 500 255") +7 (800) 500-255
+
+                td
+                    .table-content.table-content--credits
+                        a(href="mailto:kaskad-shop@gmail.com") kaskad-shop@gmail.com
+                        a(href="https://kaskadtools.com" target="_blank") kaskadtools.com

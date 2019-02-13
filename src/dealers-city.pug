@@ -1,0 +1,20 @@
+extends ./pug/base_template
+include ./pug/mixins/breadcrumbs
+
+block title
+    title Starter Template
+
+block content
+    .container
+        .content-card
+            .content-heading
+                +add_breadcrumbs([
+                    {text: "Каталог продукции"},
+                    {text: "Дилеры"},
+                    {text: "Абакан"}
+                ])
+                h2 Дизельные электростанции «НГЗУ» в городе Абакан
+
+            .content-description.content-description-dealers-city
+
+                include pug/components/dealers-city/content_main
