@@ -1,0 +1,81 @@
+nav.nav-dealers
+    ul
+        li
+            a(href="#") Отделы продаж
+        li
+            a(href="#") Ремонт и техническое обслуживание
+        li
+            a(href="#") Запчасти
+        li.active
+            a(href="#") Где купить
+
+
+-
+    var towns = [
+    [
+    {text: "Абакан"},
+    {text: "Аксай", marked: true},
+    {text: "Алматы", span: "(Казахстан)"},
+    {text: "Ангарск"},
+    {text: "Астана", span: "(Казахстан)"},
+    {text: "Астрахань"},
+    {text: "Баку", span: "(Азербайджан)"},
+    {text: "Барнаул", marked: true},
+    {text: "Белово"},
+    {text: "Бердск"},
+    {text: "Владивосток"}
+    ],
+
+    [
+    {text: "Владикавказ"},
+    {text: "Волгоград"},
+    {text: "Волжский"},
+    {text: "Вологда"},
+    {text: "Екатеринбург", marked: true},
+    {text: "Ижевск"},
+    {text: "Иркутск", marked: true},
+    {text: "Йошкар-Ола"},
+    {text: "Казань"},
+    {text: "Кемерово"},
+    {text: "Краснодар"}
+    ],
+
+    [
+    {text: "Красноярск", marked: true},
+    {text: "Междуреченск"},
+    {text: "Москва"},
+    {text: "Набережные Челны"},
+    {text: "Нижневартовск"},
+    {text: "Новокузнецк"},
+    {text: "Новосибирск"},
+    {text: "Омск", marked: true},
+    {text: "Осинники"},
+    {text: "Первоуральск"},
+    {text: "Пермь"}
+    ],
+
+    [
+    {text: "Самара"},
+    {text: "Саратов"},
+    {text: "Сочи"},
+    {text: "Ставрополь"},
+    {text: "Томск"},
+    {text: "Тюмень", marked: true},
+    {text: "Улан-Удэ", marked: true},
+    {text: "Уфа"},
+    {text: "Хабаровск"},
+    {text: "Чита"},
+    {text: "Якутск", marked: true}
+    ]
+    ]
+
+.towns
+    each rows in towns
+        .towns-container
+            each item in rows
+                .towns-link(class=item.marked ? "marked" : null)
+                    a(href="#")
+                        span= item.text
+
+                    if item.span
+                        span= item.span
