@@ -1,8 +1,55 @@
 @import "../../vars"
 
 .towns
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  width: (1211px - 211px)/(1211px + 50px) * 100%
+  margin: 30px 8px 0 31px
 
-
-.towns-container
+.towns-container:last-child
+  margin-right: 0
 
 .towns-link
+  font-size: 16px
+  padding-left: 17px
+  position: relative
+
+  a
+    position: relative
+    font-size: 16px
+
+    //&:hover
+      span
+        color: $color-blue
+        border-color: $color-blue
+
+    span
+      color: $color-black
+      line-height: (39/16)
+      border-bottom: 1px solid $color-grey
+      padding-bottom: 2px
+      transition: $transition-duration
+
+      &:hover
+        color: $color-blue
+        border-color: $color-blue
+
+  span
+    margin-left: 3px
+    color: $color-grey-light
+
+.marked
+  a:before
+    content: ""
+    width: 6px
+    height: 6px
+    background: #FF8324
+    border-radius: 100%
+    position: absolute
+    top: 7px
+    left: -16px
+    cursor: initial
+
+
+
