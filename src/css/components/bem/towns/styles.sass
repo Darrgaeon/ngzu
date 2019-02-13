@@ -4,20 +4,22 @@
   display: flex
   flex-wrap: wrap
   justify-content: space-between
-  width: (1211px - 211px)/(1211px + 50px) * 100%
+  //width: (1211px - 211px)/(1211px + 50px) * 100%
+  flex: 1
   margin: 30px 8px 0 31px
 
-  @media screen and (max-width: 1330px)
-    margin-right: 0
-    max-width: 795px
 
-  @media screen and (max-width: 1160px)
-    max-width: 650px
+  //@media screen and (max-width: 1330px)
+  //  margin-right: 0
+  //  max-width: 795px
+  //
+  //@media screen and (max-width: 1160px)
+  //  max-width: 650px
+  //
+  //@media screen and (max-width: 1011px)
+  //  max-width: 360px
 
-  @media screen and (max-width: 1011px)
-    max-width: 360px
-
-  @media screen and (max-width: 716px)
+  //@media screen and (max-width: 716px)
     order: 1
     max-width: 100%
 
@@ -64,4 +66,8 @@
     cursor: initial
 
 
-
+@media screen and (max-width: 716px)
+  .towns
+    order: 2
+    margin: 0
+    flex: 100%
