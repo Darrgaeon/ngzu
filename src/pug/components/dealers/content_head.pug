@@ -1,0 +1,60 @@
+include ../../mixins/svg_sprite
+
+form(action="#").dealers-search
+    label(for="flex0").input-group
+        +add_svg({class: "input-group-prepend__icon input-group-prepend__icon--search", icon: "search-long"})
+        input(type="text"
+        placeholder="Поиск"
+        data-min-length="0"
+        list="towns"
+        name="town"
+        ).input.flexdatalist
+
+    datalist#towns
+        option(value="Абакан") Абакан
+        option(value="Аксай") Аксай (Казахстан)
+        option(value="Алматы") Алматы
+        option(value="Ангарск") Ангарск
+        option(value="Астана") Астана (Казахстан)
+        option(value="Астрахань") Астрахань
+        option(value="Баку") Баку (Азербайджан)
+        option(value="Барнаул") Барнаул
+        option(value="Белово") Белово
+        option(value="Бердск") Бердск
+        option(value="Владивосток") Владивосток
+        option(value="Владикавказ") Владикавказ
+        option(value="Волгоград") Волгоград
+        option(value="Волжский") Волжский
+        option(value="Вологда") Вологда
+        option(value="Екатеринбург") Екатеринбург
+        option(value="Ижевск") Ижевск
+        option(value="Иркутск") Иркутск
+        option(value="Йошкар-Ола") Йошкар-Ола
+        option(value="Казань") Казань
+        option(value="Кемерово") Кемерово
+        option(value="Краснодар") Краснодар
+        option(value="Красноярск") Красноярск
+        option(value="Междуреченск") Междуреченск
+        option(value="Москва") Москва
+        option(value="Набережные Челны") Набережные Челны
+        option(value="Нижневартовск") Нижневартовск
+        option(value="Новокузнецк") Новокузнецк
+        option(value="Новосибирск") Новосибирск
+        option(value="Омск") Омск
+        option(value="Осинники") Осинники
+        option(value="Первоуральск") Первоуральск
+        option(value="Пермь") Пермь
+        option(value="Самара") Самара
+        option(value="Саратов") Саратов
+        option(value="Сочи") Сочи
+        option(value="Ставрополь") Ставрополь
+        option(value="Томск") Томск
+        option(value="Тюмень") Тюмень
+        option(value="Улан-Удэ") Улан-Удэ
+        option(value="Уфа") Уфа
+        option(value="Хабаровск") Хабаровск
+        option(value="Чита") Чита
+        option(value="Якутск") Якутск
+
+.dealers-tip
+    span #[i.dealers-tip-mark] — региональный склад готовой продукии

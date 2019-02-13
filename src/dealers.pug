@@ -1,0 +1,17 @@
+extends ./pug/base_template
+include ./pug/mixins/breadcrumbs
+
+block title
+    title Starter Template
+
+block content
+    .container
+        .content-card
+            .content-heading
+                +add_breadcrumbs([
+                    {text: "Каталог продукции"},
+                    {text: "Дилеры"}
+                ])
+                h2 Дилеры
+            .content-description.content-description-dealers
+                include pug/components/dealers/content_head
