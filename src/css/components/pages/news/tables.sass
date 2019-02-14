@@ -4,3 +4,73 @@
   article
     table
       font-size: 14px
+      margin-top: 15px
+
+      thead
+        tr
+          th
+            padding: 18px 15px 18px 21px
+            background: #EAF0F4
+            position: relative
+
+            &:before
+              content: ""
+              width: 1px
+              height: 100%
+              background: #D6DFE4
+              position: absolute
+              top: 0
+              right: 0
+
+          th:last-child
+            &:before
+              display: none
+
+      tbody
+        tr
+          td
+            vertical-align: top
+            font-size: 14px
+            line-height: (18/14)
+            padding: 18px 15px 19px 21px
+            position: relative
+            border-bottom: 1px solid #EAF0F4
+            color: $color-black
+
+            &:before
+              content: ""
+              width: 1px
+              height: 100%
+              background: #EAF0F4
+              position: absolute
+              top: 0
+              right: 0
+
+          td:first-child
+            &:after
+              content: ""
+              width: 1px
+              height: 100%
+              background: #EAF0F4
+              position: absolute
+              top: 0
+              left: 0
+
+        tr:nth-child(3)
+          td
+            padding-bottom: 31px
+
+
+@media screen and (max-width: 1250px)
+  .content-description
+    article
+      table
+        width: 100% !important
+
+@media screen and (max-width: 650px)
+  .content-description
+    article
+      table
+        display: block
+        overflow-x: auto
+        white-space: nowrap

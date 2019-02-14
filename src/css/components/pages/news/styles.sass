@@ -9,10 +9,15 @@
     h2, p
       color: $color-black
 
+
     img
       position: relative
       top: 11px
       left: -1px
+
+    .float-right
+      margin-left: 25px
+      margin-bottom: 25px
 
     h2
       font-size: 26px
@@ -72,8 +77,8 @@
       flex-direction: column
       flex-wrap: wrap
       align-items: center
-      margin: 72px 0 42px 12px
-
+      max-width: 823px
+      margin: 72px auto 42px
       em
         font-size: 16px
         color: $color-black
@@ -82,7 +87,6 @@
         line-height: 26px
         background: #F3FAFF
         padding: 9px 32px 13px 18px
-        max-width: 823px
         margin-bottom: 11px
         position: relative
 
@@ -90,7 +94,7 @@
           content: ""
           width: 58px
           height: 58px
-          background: url(../img/quote.svg) center center/ 23px 23px no-repeat $color-white
+          background: url("../img/quote.svg") center center/ 23px 23px no-repeat $color-white
           box-shadow: 0 4px 15px rgba(20, 29, 46, 0.05)
           border-radius: 100%
           position: absolute
@@ -98,5 +102,5 @@
           left: -42px
 
       figcaption
-        width: 823px
+        width: 100%
         text-align: right
