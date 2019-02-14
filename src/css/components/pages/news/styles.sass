@@ -1,6 +1,5 @@
 @import "../../vars"
 
-
 .content-description
   article
     position: relative
@@ -68,4 +67,36 @@
       left: 0
       margin-bottom: 23px
 
+    figure
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: center
+      margin: 72px 0 42px 12px
 
+      em
+        font-size: 16px
+        color: $color-black
+
+      blockquote
+        line-height: 26px
+        background: #F3FAFF
+        padding: 9px 32px 13px 18px
+        max-width: 823px
+        margin-bottom: 11px
+        position: relative
+
+        &:before
+          content: ""
+          width: 58px
+          height: 58px
+          background: url(../img/quote.svg) center center/ 23px 23px no-repeat $color-white
+          box-shadow: 0 4px 15px rgba(20, 29, 46, 0.05)
+          border-radius: 100%
+          position: absolute
+          top: -35px
+          left: -42px
+
+      figcaption
+        width: 823px
+        text-align: right
