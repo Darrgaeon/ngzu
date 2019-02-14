@@ -1,0 +1,101 @@
+include ../../mixins/svg_sprite
+
+- var itemsInTable = 10;
+
+.table-compare-wrapper.parent-ps-scroll-reach-start
+    table.table-compare.table-custom-scroll.ps-table-fixed-header
+        thead
+            tr
+                th.download-table
+                    .table-cell-content
+                        .button-container
+                            a(href="#").button.button-blue
+                                +add_svg({class: "button-download-table__icon", icon: "download"})
+                                span Скачать таблицу
+                            .button-shadow.button-shadow--blue
+
+                        span.mt-auto Параметры
+
+                each _ in Array(itemsInTable)
+                    th
+                        a(href="#").table-cell-content
+                            .table-cell-content__image
+                                img(src="img/table-item.jpg" data-rjs="2" alt="Photo")
+                            span АД100-T400-1MP3
+
+        tbody
+            tr
+                td мощность номинальная, кВт
+                each _ in Array(itemsInTable)
+                    td 100
+            tr
+                td мощность номинальная, кВА
+                each _ in Array(itemsInTable)
+                    td 25
+            tr
+                td мощность максимальная, кВт
+                each _ in Array(itemsInTable)
+                    td 22
+            tr
+                td мощность максимальная, кВА
+                each _ in Array(itemsInTable)
+                    td 27,5
+            tr
+                td напряжение (В)
+                each _ in Array(itemsInTable)
+                    td 400/230
+            tr
+                td количество фаз
+                each _ in Array(itemsInTable)
+                    td 3
+            tr
+                td номинальный ток (А)
+                each _ in Array(itemsInTable)
+                    td 36
+            tr
+                td объём топливного бака (л)
+                each _ in Array(itemsInTable)
+                    td 75
+            tr
+                td расход топлива при 50% мощности л/ч
+                each _ in Array(itemsInTable)
+                    td 2.8
+            tr
+                td расход топлива при 75% мощности л/ч
+                each _ in Array(itemsInTable)
+                    td 4.2
+            tr
+                td расход топлива при 100% мощности л/ч
+                each _ in Array(itemsInTable)
+                    td 5.6
+            tr
+                td степень автоматизации
+                each _ in Array(itemsInTable)
+                    td ручной запуск
+            tr
+                td исполнение
+                each _ in Array(itemsInTable)
+                    td открытое
+            tr
+                td глушитель
+                each _ in Array(itemsInTable)
+                    td промышленный
+            tr
+                td габаритные размеры (Д;Ш;В; мм)
+                each _ in Array(itemsInTable)
+                    td 1400x610x1130
+            tr
+                td масса, кг	Гарантия, срок (мес)
+                each _ in Array(itemsInTable)
+                    td 660
+            tr
+                td производитель двигателя
+                each _ in Array(itemsInTable)
+                    td 24 Elekon
+            tr
+                td= "цена в базовой комплектации "
+                //span.tip (?)
+                    .tip__text цена в базовой#[br]комплектации
+                each _ in Array(itemsInTable)
+                    td #[strong 521 000 руб]
+

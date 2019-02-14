@@ -1,0 +1,21 @@
+extends ./pug/base_template
+include ./pug/mixins/breadcrumbs
+
+block title
+    title Starter Template
+
+block content
+    .container
+        .content-card
+            .content-heading
+                +add_breadcrumbs([
+                    {text: "Каталог продукции"},
+                    {text: "Сравнение"}
+                ])
+
+                h2 Сравнение электростанций по основным параметрам
+
+            .content-description
+                include ./pug/components/compare/table
+
+
