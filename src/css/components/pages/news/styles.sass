@@ -1,0 +1,71 @@
+@import "../../vars"
+
+
+.content-description
+  article
+    position: relative
+    top: -15px
+    left: -2px
+
+    h2, p
+      color: $color-black
+
+    img
+      position: relative
+      top: 11px
+      left: -1px
+
+    h2
+      font-size: 26px
+      font-weight: bold
+      line-height: (39/26)
+      margin-bottom: 7px
+
+    h2 + p
+      max-width: 800px
+
+    p
+      margin-bottom: 22px
+
+      a
+        color: #00A9FF
+        border-bottom: 1px solid #00A9FF
+        padding-bottom: 2px
+
+        &:hover
+          color: darken(#00A9FF, 10%)
+
+    ul
+      padding: 0
+      margin: 0 0 30px 48px
+
+      li
+        padding: 0
+        margin: 0 0 9px 0
+        list-style: none
+        position: relative
+
+        &:before
+          content: ""
+          width: 7px
+          height: 7px
+          border-radius: 100%
+          background: #FF6B00
+          position: absolute
+          top: 5px
+          left: -23px
+
+    ol
+      padding: 0 0 0 42px
+      margin: 0 0 45px 0
+
+      li
+        padding: 0 0 0 7px
+        margin: 0 0 9px 0
+
+    p + img
+      top: 3px
+      left: 0
+      margin-bottom: 23px
+
+
