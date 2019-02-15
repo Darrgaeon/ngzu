@@ -1,33 +1,64 @@
 @import "../../vars"
 
-.download-table
-  vertical-align: top
-  padding-top: 6px
-  position: relative
-  left: -2px
+.table-compare
+  thead
+    tr
 
-  .table-cell-content
-    margin-right: 81px
+      .image-table
+        top: -6px
+        padding-right: 38px
 
-    .button
-      color: #FFFFFF
-      padding: 16px 27px 20px 39px
+      .download-table
+        vertical-align: top
+        padding-top: 6px
+        position: relative
+        left: -2px
+        padding-right: 0
+        padding-left: 35px
 
-      &-container
-        width: 221px
+        .table-cell-content
+          margin-right: 120px
 
-        margin-bottom: 77px
+          span
+            font-weight: 500
+            line-height: normal
+            font-size: 15px
+            letter-spacing: 0.03em
+            text-transform: uppercase
+            color: $color-grey-light
+            display: block
+            margin-bottom: 4px
 
-      &-download-table__icon
-        width: 16px
-        height: 16px
+          a
+            transition: .8s
 
-        margin-right: 6px
+          .button
+            padding: 16px 27px 20px 39px
+            //transition: 5s
 
-        fill: #FFFFFF
+            span
+              color: #FFFFFF
+              text-transform: none
+              letter-spacing: 0
+              display: unset
 
-        z-index: 2
+            &-container
+              width: 221px
+              position: relative
+              top: 4px
 
-      &-shadow
-        width: 207px
-        height: 35px
+              margin-bottom: 84px
+
+            &-download-table__icon
+              width: 16px
+              height: 16px
+
+              margin-right: 6px
+
+              fill: #FFFFFF
+
+              z-index: 2
+
+            &-shadow
+              width: 200px
+              height: 15px
