@@ -15,6 +15,10 @@ function init() {
         require("./components/mobile-menu")();
         require("./components/maps")();
         require("./components/project-gallery")();
+        require("./components/ps-sticky-header")();
+
+        const PerfectScrollBar = require("perfect-scrollbar/dist/perfect-scrollbar.min");
+        require("./components/compare-table-custom-scroll")(PerfectScrollBar);
     });
 }
 

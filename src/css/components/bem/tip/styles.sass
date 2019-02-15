@@ -1,0 +1,27 @@
+@import "../../vars"
+
+.tip
+  position: relative
+  margin-left: 5px
+  color: $color-blue
+  font-weight: $font-weight-bold
+  cursor: help
+
+  &:hover &__text
+    display: block
+
+  &__text
+    display: none
+    font-weight: $font-weight-regular
+    color: $color-black
+    position: absolute
+    left: -65px
+    top: -59px
+    background: $color-grey
+    border-radius: 3px
+    padding: 9px 14px 10px
+    font-size: 14px
+    line-height: 19px/14px * 1em
+    width: auto
+    height: auto
+

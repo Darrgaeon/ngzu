@@ -17,6 +17,20 @@
 	color: #666
 	opacity: 1
 
+::-webkit-scrollbar
+	width: 12px
+
+::-webkit-scrollbar-track
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+	border-radius: 10px
+
+
+::-webkit-scrollbar-thumb
+	border-radius: 10px
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
+	background: $color-blue
+
+
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: #666
@@ -37,6 +51,10 @@ body
 	flex-direction: column
 	min-height: 100vh
 
+	&.disable-scroll
+		height: 100vh
+		box-sizing: border-box
+
 	// Be careful, not it disables system's font smoothing
 	// Bootstrap don't recommends to use it
 	//
@@ -44,6 +62,14 @@ body
 
 	//-webkit-font-smoothing: antialiased
 	//-moz-osx-font-smoothing: grayscale
+
+.disable-scroll
+	width: 100%
+	height: 100%
+	overflow: hidden
+
+.fancybox-active
+	height: 100vh
 
 svg, img
 	vertical-align: unset

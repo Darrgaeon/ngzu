@@ -17,25 +17,88 @@
   &:hover
     color: $color-white
 
+  &-blue, &-orange
+    position: relative
+    z-index: 9
+    display: inline-block
 
-.button-blue
+  &-blue
+    background: $gradient-blue
+
+    &:hover
+      .button-helper-gradient-blue
+        opacity: 1
+
+  &-orange
+    background: $gradient-orange
+
+    &:hover
+      .button-helper-gradient-orange
+        opacity: 1
+
+  &-helper-gradient-blue
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    opacity: 0
+
+  &-helper-gradient-blue
+    background: $gradient-orange
+
+  &-helper-gradient-orange
+    background: $gradient-blue
+
+
+//.button-blue, .button-orange
+//  position: relative
+//  z-index: 9
+//  display: inline-block
+
+//.button-blue
   background: $gradient-blue
 
   &:hover
-    background: $gradient-orange
+    .button-helper-blue
+      opacity: 1
 
-  &:disabled
-    color: $color-black
-    border: 2px solid #9DACC3
-    background: $color-white
 
-.button-orange
+
+
+
+//.button-orange
   background: $gradient-orange
 
-  &:hover
-    background: $gradient-blue
 
-  &:disabled
-    color: $color-black
-    border: 2px solid #9DACC3
-    background: $color-white
+
+
+
+
+//.button-blue
+//  background: $gradient-blue
+//  z-index: 9
+//
+//  &:hover
+//    .button-helper
+//      opacity: 1
+//
+//  //&:hover
+//    background: $gradient-orange
+//
+//  &:disabled
+//    color: $color-black
+//    border: 2px solid #9DACC3
+//    background: $color-white
+
+//.button-orange
+//  background: $gradient-orange
+//
+//  &:hover
+//    background: $gradient-blue
+//
+//  &:disabled
+//    color: $color-black
+//    border: 2px solid #9DACC3
+//    background: $color-white
