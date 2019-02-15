@@ -27,7 +27,6 @@ module.exports = function (PerfectScrollBar) {
         });
 
         $(window).resize(function () {
-            console.log($( window ).width());
             scroll.update();
         });
     });
