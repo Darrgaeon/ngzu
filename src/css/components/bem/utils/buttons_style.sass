@@ -2,7 +2,7 @@
 @import "../../mixins"
 
 .container-button
-  position: relative
+  position: relative !important
 
 .button
   display: block
@@ -37,7 +37,7 @@
       .button-helper-gradient-orange
         opacity: 1
 
-  &-helper-gradient-blue
+  &-helper-gradient-blue, &-helper-gradient-orange
     position: absolute
     z-index: -1
     top: 0
@@ -45,6 +45,7 @@
     width: 100%
     height: 100%
     opacity: 0
+    border-radius: 3px
 
   &-helper-gradient-blue
     background: $gradient-orange
@@ -54,55 +55,3 @@
 
 .buttonDisabled
   display: none
-
-
-//.button-blue, .button-orange
-//  position: relative
-//  z-index: 9
-//  display: inline-block
-
-//.button-blue
-  background: $gradient-blue
-
-  &:hover
-    .button-helper-blue
-      opacity: 1
-
-
-
-
-
-//.button-orange
-  background: $gradient-orange
-
-
-
-
-
-
-//.button-blue
-//  background: $gradient-blue
-//  z-index: 9
-//
-//  &:hover
-//    .button-helper
-//      opacity: 1
-//
-//  //&:hover
-//    background: $gradient-orange
-//
-//  &:disabled
-//    color: $color-black
-//    border: 2px solid #9DACC3
-//    background: $color-white
-
-//.button-orange
-//  background: $gradient-orange
-//
-//  &:hover
-//    background: $gradient-blue
-//
-//  &:disabled
-//    color: $color-black
-//    border: 2px solid #9DACC3
-//    background: $color-white
