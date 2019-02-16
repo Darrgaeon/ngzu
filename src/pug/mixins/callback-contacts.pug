@@ -1,0 +1,10 @@
+mixin add_callback-contacts(array)
+    each item in array
+        .callback-contact
+            .callback-contact-image
+                +add_svg({class: "callback-contact-image__icon", icon: item.image})
+                span(class=item.class_phone_number)= item.number
+
+            .callback-contact-description
+                a(href= item.link)= (item.title)
+                span= (item.text)

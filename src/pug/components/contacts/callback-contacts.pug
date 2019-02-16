@@ -1,0 +1,43 @@
+include ../../mixins/svg_sprite
+include ../../mixins/callback-contacts
+
+.callback-contacts
+    +add_callback-contacts([{
+        image: "contacts-map-marker",
+        title: "Новосибирск, ул. Аэропорт, 56",
+        text: "отдел продаж",
+        link: "#"
+    }])
+
+    +add_callback-contacts([{
+        image: "contacts-mail",
+        title: "zakaz@ngzu.ru",
+        text: "электронная почта",
+        link: "#"
+    }])
+
+    +add_callback-contacts([{
+        image: "contacts-phone",
+        title: "+7 (800) 500-07-80",
+        text: "бесплатные звонки по РФ",
+        link: "#",
+        class_phone_number: "callback-contact-image--phone__number",
+        number: 1
+    }])
+
+    +add_callback-contacts([{
+        image: "contacts-phone",
+        title: "(383) 243-11-11",
+        text: "телефон-факс",
+        link: "#",
+        class_phone_number: "callback-contact-image--phone__number",
+        number: 2
+    }])
+
+    .callback-contacts-button
+        .button-container
+            a(href="#").button.button-orange
+                span.button-helper-gradient-orange
+                +add_svg({class: "button--contacts-dealers__icon", icon: "contacts-house"})
+                span Дилеры НГЗУ в городах России и СНГ
+                //.button-shadow.button-shadow--blue

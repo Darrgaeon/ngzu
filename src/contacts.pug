@@ -1,0 +1,25 @@
+extends ./pug/base_template
+include ./pug/mixins/breadcrumbs
+
+block title
+    title Rusodot NZGU Contacts
+
+block content
+    .container
+        .content-card
+            .content-heading
+                +add_breadcrumbs([
+                    {text: "Каталог продукции"},
+                    {text: "Контакты"}
+                ])
+
+                h2 Контакты
+
+            .content-description.content-description-contacts
+                include ./pug/components/contacts/nav-dealers
+                include ./pug/components/contacts/callback-contacts
+                //include ./pug/components/catalog-product/description
+
+
+
+

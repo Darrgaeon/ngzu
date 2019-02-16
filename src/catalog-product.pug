@@ -1,0 +1,27 @@
+extends ./pug/base_template
+include ./pug/mixins/breadcrumbs
+
+block title
+    title Rusodot NZGU Catalog-Product
+
+block content
+    .container
+        .content-card
+            .content-heading
+                +add_breadcrumbs([
+                    {text: "Каталог продукции"},
+                    {text: "Дизельные электростанции и дизельные приводы"},
+                    {text: "ДГУ мощностью более 100 кВт"},
+                    {text: "Дизельгенератор"}
+                ])
+
+                h2 Дизельгенератор АД100-T400-1РМЗ
+
+            .content-description.content-description-catalog-product
+                .product
+                    //include ./pug/components/catalog-product/heading
+                    //include ./pug/components/catalog-product/description
+
+
+
+

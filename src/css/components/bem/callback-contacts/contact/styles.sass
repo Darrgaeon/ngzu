@@ -1,0 +1,65 @@
+@import "../../../vars"
+
+.callback-contact
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 20px
+
+  &-image
+    display: flex
+    justify-content: center
+    align-items: center
+
+    position: relative
+
+    width: 56px
+    height: 56px
+
+    background: $color-white
+    border: 1px solid #EAF0F4
+    border-radius: 3px
+
+
+    &__icon
+      width: 24px
+      height: 24px
+
+      fill: none
+      stroke: #ff6b00
+      stroke-width: 2px
+
+    span
+      font-weight: bold
+      line-height: normal
+      font-size: 13px
+
+      color: #ff6b00
+
+      position: absolute
+      top: 12px
+      right: 18px
+
+
+  &-description
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: center
+
+    margin-left: 15px
+
+    font-weight: normal
+    line-height: normal
+
+    a
+      font-size: 16px
+      color: $color-black
+
+      position: relative
+      top: -3px
+
+    span
+      font-size: 14px
+      color: $color-grey-light
+
+
