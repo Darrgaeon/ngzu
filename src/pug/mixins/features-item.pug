@@ -1,6 +1,6 @@
 include ../mixins/svg_sprite
 
-mixin add_features-item(image, title, text, link, buttonText, className, classShadowNone)
+mixin add_features-item(image, title, text, link, buttonText, className, classShadowNone, buttonDisabled)
     .features-item
         .features-item-picture
             +add_svg({class: "features-item-picture__icon", icon: image})
@@ -12,6 +12,7 @@ mixin add_features-item(image, title, text, link, buttonText, className, classSh
             href=link
             class=className
             ).button.button-blue
+                span.button-helper-gradient-blue(class=buttonDisabled)
                 span= buttonText
 
             .button-shadow.button-shadow--blue(class=classShadowNone)
