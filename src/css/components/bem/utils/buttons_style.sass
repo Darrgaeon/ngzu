@@ -15,6 +15,10 @@
   z-index: 2
   padding: 18px 15px
 
+  span
+    position: relative
+    z-index: 2
+
   cursor: pointer
 
   &:hover
@@ -22,38 +26,47 @@
 
   &-blue, &-orange
     position: relative
-    z-index: 9
-    display: inline-block
+    //z-index: 9
+    //display: inline-block
+
+    &:hover:before
+      opacity: 1
+
+    &:before
+      content: ""
+      display: block
+
+      width: 100%
+      height: 100%
+
+      border-radius: 3px
+      opacity: 0
+      transition: $transition-duration
+
+      position: absolute
+      top: 0
+      left: 0
 
   &-blue
     background: $gradient-blue
 
-    &:hover
-      .button-helper-gradient-blue
-        opacity: 1
+    position: relative
+    z-index: 1
+
+    &:before
+      background: $gradient-orange
 
   &-orange
     background: $gradient-orange
 
-    &:hover
-      .button-helper-gradient-orange
-        opacity: 1
+    position: relative
+    z-index: 1
 
-  &-helper-gradient-blue, &-helper-gradient-orange
-    position: absolute
-    z-index: -1
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    opacity: 0
-    border-radius: 3px
+    &:hover:before
+      opacity: 1
 
-  &-helper-gradient-blue
-    background: $gradient-orange
-
-  &-helper-gradient-orange
-    background: $gradient-blue
+    &:before
+      background: $gradient-blue
 
 .buttonDisabled
   display: none
