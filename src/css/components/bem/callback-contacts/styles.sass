@@ -2,4 +2,17 @@
 
 .callback-contacts
   width: 348px
-  margin-left: 37px
+
+  position: relative
+
+  &:before
+    content: ""
+    width: 1px
+    height: calc(100% + 45px + 51px)
+    //476
+
+    background: $color-grey
+
+    position: absolute
+    top: -26px
+    right: -36px

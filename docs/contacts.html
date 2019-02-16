@@ -210,46 +210,64 @@
                 <li><a href="#">Где купить</a></li>
               </ul>
             </nav>
-            <div class="callback-contacts">
-                          <div class="callback-contact">
-                            <div class="callback-contact-image">
-                                          <svg class="callback-contact-image__icon">
-                                            <use xlink:href="svg/sprite.svg#svg--contacts-map-marker"></use>
-                                          </svg><span></span>
-                            </div>
-                            <div class="callback-contact-description"><a href="#">Новосибирск, ул. Аэропорт, 56</a><span>отдел продаж</span></div>
-                          </div>
-                          <div class="callback-contact">
-                            <div class="callback-contact-image">
-                                          <svg class="callback-contact-image__icon">
-                                            <use xlink:href="svg/sprite.svg#svg--contacts-mail"></use>
-                                          </svg><span></span>
-                            </div>
-                            <div class="callback-contact-description"><a href="#">zakaz@ngzu.ru</a><span>электронная почта</span></div>
-                          </div>
-                          <div class="callback-contact">
-                            <div class="callback-contact-image">
-                                          <svg class="callback-contact-image__icon">
-                                            <use xlink:href="svg/sprite.svg#svg--contacts-phone"></use>
-                                          </svg><span class="callback-contact-image--phone__number">1</span>
-                            </div>
-                            <div class="callback-contact-description"><a href="#">+7 (800) 500-07-80</a><span>бесплатные звонки по РФ</span></div>
-                          </div>
-                          <div class="callback-contact">
-                            <div class="callback-contact-image">
-                                          <svg class="callback-contact-image__icon">
-                                            <use xlink:href="svg/sprite.svg#svg--contacts-phone"></use>
-                                          </svg><span class="callback-contact-image--phone__number">2</span>
-                            </div>
-                            <div class="callback-contact-description"><a href="#">(383) 243-11-11</a><span>телефон-факс</span></div>
-                          </div>
-              <div class="callback-contacts-button">
-                <div class="container-button"><a class="button button-orange" href="#"><span class="button-helper-gradient-orange"></span>
-                                <svg class="button-contacts-dealers__icon">
-                                  <use xlink:href="svg/sprite.svg#svg--contacts-house"></use>
-                                </svg><span>Дилеры НГЗУ в городах России и СНГ</span></a>
-                  <div class="button-shadow button-shadow--orange"></div>
+            <div class="contacts-page-callback">
+              <div class="callback-contacts">
+                              <div class="callback-contact">
+                                <div class="callback-contact-image">
+                                                <svg class="callback-contact-image__icon">
+                                                  <use xlink:href="svg/sprite.svg#svg--contacts-map-marker"></use>
+                                                </svg><span></span>
+                                </div>
+                                <div class="callback-contact-description"><a href="#">Новосибирск, ул. Аэропорт, 56</a><span>отдел продаж</span></div>
+                              </div>
+                              <div class="callback-contact">
+                                <div class="callback-contact-image">
+                                                <svg class="callback-contact-image__icon">
+                                                  <use xlink:href="svg/sprite.svg#svg--contacts-mail"></use>
+                                                </svg><span></span>
+                                </div>
+                                <div class="callback-contact-description"><a href="#">zakaz@ngzu.ru</a><span>электронная почта</span></div>
+                              </div>
+                              <div class="callback-contact">
+                                <div class="callback-contact-image">
+                                                <svg class="callback-contact-image__icon">
+                                                  <use xlink:href="svg/sprite.svg#svg--contacts-phone"></use>
+                                                </svg><span class="callback-contact-image--phone__number">1</span>
+                                </div>
+                                <div class="callback-contact-description"><a href="#">+7 (800) 500-07-80</a><span>бесплатные звонки по РФ</span></div>
+                              </div>
+                              <div class="callback-contact">
+                                <div class="callback-contact-image">
+                                                <svg class="callback-contact-image__icon">
+                                                  <use xlink:href="svg/sprite.svg#svg--contacts-phone"></use>
+                                                </svg><span class="callback-contact-image--phone__number">2</span>
+                                </div>
+                                <div class="callback-contact-description"><a href="#">(383) 243-11-11</a><span>телефон-факс</span></div>
+                              </div>
+                <div class="callback-contacts-button">
+                  <div class="container-button"><a class="button button-orange" href="#"><span class="button-helper-gradient-orange"></span>
+                                    <svg class="button-contacts-dealers__icon">
+                                      <use xlink:href="svg/sprite.svg#svg--contacts-house"></use>
+                                    </svg><span>Дилеры НГЗУ в городах России и СНГ</span></a>
+                    <div class="button-shadow button-shadow--orange"></div>
+                  </div>
                 </div>
+              </div>
+              <div class="contacts-callback-form-container">
+                <form action="#">
+                  <h4>Есть вопросы? Задайте их здесь</h4>
+                  <div class="input-group">
+                    <input class="input" type="text" name="name" placeholder="Имя">
+                    <input class="input" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+                  </div>
+                  <textarea class="input" name="message" placeholder="Ваш вопрос"></textarea>
+                  <div class="button-row">
+                    <div class="container-button">
+                      <button class="button button-blue" type="submit"><span class="button-helper-gradient-blue"></span><span>Отправить</span></button>
+                      <!--.button-shadow.button-shadow--blue-->
+                    </div><span>Оставляя контактную информацию, вы соглашаетесь на обработку персональных данных</span>
+                  </div>
+                </form>
               </div>
             </div>
             <!--include ./pug/components/catalog-product/description-->
