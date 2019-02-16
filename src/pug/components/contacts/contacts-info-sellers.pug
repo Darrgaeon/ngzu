@@ -3,4 +3,143 @@
         span Отделы продаж по РФ
 
     .sellers
+        -
+            function getPhoneLink(phone) {
+                return `tel:+7 ${phone}`;
+            };
 
+            var sellers = [
+            [
+                {
+                city: "Архангельск",
+                phone: "(8182) 46-41-26"
+                },
+                {
+                city: "Барнаул",
+                phone: "(385) 22-231-60"
+                },
+                {
+                city: "Владивосток",
+                phone: "(4232) 49-28-96"
+                },
+                {
+                city: "Волгоград",
+                phone: "(8442) 45-94-15"
+                },
+                {
+                city: "Екатеринбург",
+                phone: "(343) 379-52-87"
+                },
+                {
+                city: "Ижевск",
+                phone: "(3412) 26-04-05"
+                },
+                {
+                city: "Казань",
+                phone: "(843) 216-82-90"
+                },
+                {
+                city: "Кемерово",
+                phone: "(3842) 77-74-60"
+                },
+                {
+                city: "Комсомольск-на-Амуре",
+                phone: "(4217) 24-22-99"
+                }
+            ],
+            [
+                {
+                city: "Санкт-Петербург",
+                phone: "(812) 409-36-25"
+                },
+                {
+                city: "Сургут",
+                phone: "(3462) 77-90-94"
+                },
+                {
+                city: "Томск",
+                phone: "(3822) 98-41-62"
+                },
+                {
+                city: "Тюмень",
+                phone: "(3452) 65-91-23"
+                },
+                {
+                city: "Улан-Удэ",
+                phone: "(3012) 20-40-95"
+                },
+                {
+                city: "Уфа",
+                phone: "(347) 224-24-56"
+                },
+                {
+                city: "Хабаровск",
+                phone: "(4212) 79-42-63"
+                },
+                {
+                city: "Челябинск",
+                phone: "(351) 200-94-08"
+                },
+                {
+                city: "Чита",
+                phone: "(3022) 28-40-27"
+                }
+            ],
+            [
+                {
+                city: "Краснодар",
+                phone: "(861) 204-18-32"
+                },
+                {
+                city: "Красноярск",
+                phone: "(391) 249-66-59"
+                },
+                {
+                city: "Магнитогорск",
+                phone: "(3519) 55-03-44"
+                },
+                {
+                city: "Москва",
+                phone: "(499) 322-84-06"
+                },
+                {
+                city: "Новокузнецк",
+                phone: "(3843) 20-46-02"
+                },
+                {
+                city: "Омск",
+                phone: "(3812) 20-71-91"
+                },
+                {
+                city: "Пермь",
+                phone: "(342) 299-41-53"
+                },
+                {
+                city: "Ростов-на-Дону",
+                phone: "(863) 309-08-12"
+                },
+                {
+                city: "Самара",
+                phone: "(846) 215-07-65"
+                }
+            ]
+            ]
+
+            sellers = sellers.map(function (value) {
+                return value.map(function (item) {
+                    return {
+                        city: item.city,
+                        phone: item.phone,
+                        phoneLink: getPhoneLink(item.phone)
+                    }
+                });
+            });
+
+        each table in sellers
+            table
+                tbody
+                    each seller in table
+                        tr
+                            th= seller.city
+                            td
+                                a(href=seller.phoneLink)= seller.phone
