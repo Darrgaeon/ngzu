@@ -1,0 +1,16 @@
+
+mixin add_our-staff(array)
+.our-staff-item
+    each item in array
+        img(src="img/table-item.jpg" alt="our-staff").float-left
+        h6= item.title
+        span= item.description
+
+        .block-phone
+            span Сотовый:
+            a(href= item.linkPhone)= item.phone
+
+        .block-phone
+            span Сотовый:
+            a(href= item.linkPhone)= item.phone
+

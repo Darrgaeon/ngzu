@@ -1,0 +1,18 @@
+.our-staff
+    h4
+        span Наш персонал
+
+    .our-staff-container
+        each _ in new Array(4)
+            .our-staff-card
+                .our-staff-card-image.float-left
+                    img(src="img/welding.jpg" alt="Person")
+                .our-staff-card-info
+                    h6 Волков Алексей Геннадьевич
+                    span Руководитель тепло-энергетического направления
+
+                    p
+                        | Сотовый: #[a(href="#") +7 (913) 956-56-83] <br/>
+                        | Факс: #[a(href="#") (383) 243-11-11] <br/>
+                        | ICQ: #[a(href="#") 659-470-670] <br/>
+                        | #[a(href="#") volkov@nzgu.ru]
