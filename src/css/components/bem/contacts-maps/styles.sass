@@ -1,0 +1,40 @@
+@import "../../vars"
+@import "../../mixins"
+
+.contacts-maps
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+  &-container
+    margin-top: -4px
+    width: 100%
+
+    h4
+      margin-bottom: 7px
+
+  .ya-map
+    width: 100%
+    height: 395px
+
+    overflow: hidden
+
+    background: $color-grey
+
+    &-container
+      width: 587px/1209px * 100%
+
+      overflow: hidden
+
+      @media screen and (max-width: 1000px)
+        width: 100%
+        margin-bottom: 20px
+
+        &:last-child
+          margin-bottom: 0
+
+      h5
+        font-weight: $font-weight-regular
+        font-size: 17px
+
+        margin: 0 0 5px
