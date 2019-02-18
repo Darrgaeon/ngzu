@@ -40,6 +40,9 @@
     &::placeholder
       color: $color-grey-light
 
+  textarea
+    resize: none
+
   .error
     border: 2px solid red
 
@@ -69,3 +72,78 @@
 
         position: relative
         top: 3px
+
+
+@media screen and (max-width: 1240px)
+  .contacts-callback-form-container
+    .button-row
+      .container-button
+        width: 100%
+
+      > span
+        width: 100%
+        max-width: 100%
+        margin: 10px 0 0 0
+
+@media screen and (max-width: 1180px)
+  .contacts-callback-form-container
+    .input-group
+      display: block
+
+      .input
+        width: 100%
+        margin: 5px 0
+
+
+@media screen and (max-width: 1036px)
+  .content-description-contacts
+    .contacts-page-callback
+      margin-left: 0
+
+    .nav-dealers
+      width: 100%
+
+      margin-bottom: 20px
+
+      ul
+        display: flex
+        margin-bottom: 25px
+
+        width: 100%
+
+        li
+          display: flex
+          align-items: center
+          justify-content: center
+
+          width: 100%
+          max-width: 100%
+
+@media screen and (max-width: 740px)
+  .content-description-contacts
+    .callback-contacts
+      width: 100%
+
+    .contacts-callback-form-container
+      margin-left: 0
+      margin-top: 30px
+
+    .nav-dealers
+      ul
+        li
+          justify-content: left
+
+@media screen and (max-width: 450px)
+  .callback-contacts-button
+    .container-button
+      .button
+        padding-top: 15px
+        padding-bottom: 15px
+
+@media screen and (max-width: 418px)
+  .callback-contact
+    &-description
+      width: 100%
+
+      margin-left: 0
+      margin-top: 15px

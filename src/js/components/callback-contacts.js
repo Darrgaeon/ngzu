@@ -1,8 +1,8 @@
 module.exports = function () {
 
-    const $сallbackContainer = $(".contacts-callback-form-container");
+    const $callbackContainer = $(".contacts-callback-form-container");
 
-    if ($сallbackContainer.length) {
+    if ($callbackContainer.length) {
 
         const $callbackForm = $(".contacts-callback-form-container form");
 
