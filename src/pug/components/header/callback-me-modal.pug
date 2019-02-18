@@ -4,12 +4,16 @@ include ../../mixins/svg_sprite
 div#callback-me-modal(uk-modal)
     div.uk-modal-dialog.uk-modal-body.callback-me-modal
         .callback-me-modal__container_block
-            h1 Перезвоните мне
+            form(action="#")
+                h1 Перезвоните мне
 
-            label
-                input(type="text" placeholder="Имя").callback-me-modal__input
-            label
-                input(type="tel" placeholder="+8800554455").callback-me-modal__input
+                label
+                    input(type="text" name="name" placeholder="Имя").callback-me-modal__input
+                label
+                    input(type="tel" name="phone" placeholder="+7 (___) ___-__-__").callback-me-modal__input
 
-            .button-container
-                a(href="#").button.button-blue.uk-modal-close Отправить
+                .button-container
+                    button(type="submit").button.button-blue
+                        span Отправить
+
+            //uk-modal-close

@@ -87,14 +87,19 @@
       <div id="callback-me-modal" uk-modal>
         <div class="uk-modal-dialog uk-modal-body callback-me-modal">
           <div class="callback-me-modal__container_block">
-            <h1>Перезвоните мне</h1>
-            <label>
-              <input class="callback-me-modal__input" type="text" placeholder="Имя">
-            </label>
-            <label>
-              <input class="callback-me-modal__input" type="tel" placeholder="+8800554455">
-            </label>
-            <div class="button-container"><a class="button button-blue uk-modal-close" href="#">Отправить</a></div>
+            <form action="#">
+              <h1>Перезвоните мне</h1>
+              <label>
+                <input class="callback-me-modal__input" type="text" name="name" placeholder="Имя">
+              </label>
+              <label>
+                <input class="callback-me-modal__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+              </label>
+              <div class="button-container">
+                <button class="button button-blue" type="submit"><span>Отправить</span></button>
+              </div>
+            </form>
+            <!--uk-modal-close-->
           </div>
         </div>
       </div>
@@ -461,25 +466,7 @@
                 </div>
               </div>
             </div>
-            <div class="contacts-maps-container">
-              <h4><span>Схемы проездов</span></h4>
-              <div class="contacts-maps">
-                <div class="ya-map-container">
-                  <h5>К офису:</h5>
-                  <div class="ya-map" data-map-center-lng="52.72396" data-map-center-lat="41.450218" data-map-zoom="16" data-map-to-point-lng="52.72396" data-map-to-point-lat="41.450218"></div>
-                </div>
-                <div class="ya-map-container">
-                  <h5>На производство:</h5>
-                  <div class="ya-map" data-map-center-lng="52.72396" data-map-center-lat="41.450218" data-map-zoom="16" data-map-to-point-lng="52.72396" data-map-to-point-lat="41.450218"></div>
-                </div>
-                <!--.ya-map-container-->
-                <!--    h5 К офису:-->
-                <!--    iframe(src="https://yandex.ru/map-widget/v1/-/C8eUI3q" width="587" height="395" frameborder="1" allowfullscreen="true")-->
-                <!--.ya-map-container-->
-                <!--    h5 На производство:-->
-                <!--    iframe(src="https://yandex.ru/map-widget/v1/-/C8eUI3q" width="587" height="395" frameborder="1" allowfullscreen="true")-->
-              </div>
-            </div>
+            <!--include ./pug/components/contacts/maps-->
           </div>
         </div>
       </div>
