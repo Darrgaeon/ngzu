@@ -12,6 +12,7 @@ function init() {
     require("slick-carousel/slick/slick");
     require("jquery-validation/dist/jquery.validate");
     require("jquery.maskedinput/src/jquery.maskedinput");
+    require("@fancyapps/fancybox/dist/jquery.fancybox");
 
     $(document).ready(function () {
         require("./components/mobile-menu")();

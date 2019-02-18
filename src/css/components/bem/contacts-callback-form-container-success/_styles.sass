@@ -1,0 +1,74 @@
+@import "../../vars"
+
+.contacts-callback-form-container-success
+  display: none
+
+  padding-top: 50px
+
+  .callback-modal-content
+    .callback-modal-status
+      display: flex
+      justify-content: center
+
+      margin-bottom: 40px
+
+      .ellipse
+        content: ""
+        width: 84px
+        height: 84px
+
+        border: 1px solid $color-blue
+        border-radius: 100%
+
+        background: $color-white
+
+        position: relative
+
+        span
+          &:after
+            content: ""
+            width: 2px
+            height: 18px
+            transform: rotate(-45deg)
+
+            background: $color-blue
+
+            position: absolute
+            top: 37px
+            left: 32px
+
+          &:before
+            content: ""
+            width: 2px
+            height: 32px
+            transform: rotate(32deg)
+
+            background: $color-blue
+
+            position: absolute
+            top: 23px
+            right: 34px
+
+    h2
+      font-size: 26px
+      margin-bottom: 36px
+
+      text-align: center
+
+    p
+      text-align: center
+
+      margin-bottom: 49px
+
+    .container-button
+      display: flex
+      justify-content: center
+
+      .button
+        padding: 21px 15px 22px
+
+    .button-shadow
+      max-width: 237px
+      left: 29px
+
+
