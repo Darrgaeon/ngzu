@@ -7,11 +7,41 @@
   justify-content: space-between
 
   &-container
-    margin-top: -4px
+    margin-top: 51px
     width: 100%
 
+    //position: relative
+    //left: 4px
+
     h4
-      margin-bottom: 7px
+      font-weight: 500
+      line-height: normal
+      font-size: 22px
+
+      position: relative
+      left: 4px
+      margin-bottom: 20px
+
+      &:before
+        content: ""
+        width: calc(100% + 35px * 2)
+        height: 1px
+
+        background: $color-grey
+
+        position: absolute
+        top: 14px
+        left: -35px
+
+      span
+        position: relative
+        left: 12px
+
+        z-index: 1
+
+        background: $color-white
+
+        padding: 0 30px
 
   .ya-map
     width: 100%

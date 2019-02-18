@@ -14,6 +14,8 @@
   "dependencies": {
     "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
+    "jquery-validation": "^1.19.0",
+    "jquery.maskedinput": "^1.4.1",
     "normalize.css": "^8.0.1",
     "perfect-scrollbar": "^1.4.0",
     "retinajs": "https://github.com/strues/retinajs",
