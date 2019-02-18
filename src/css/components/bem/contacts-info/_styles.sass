@@ -40,7 +40,26 @@
       display: flex
       justify-content: space-between
 
-      tbody
+      @media screen and (max-width: 1000px)
+        display: block
+
+        table
+          width: 100%
+
+      @media screen and (max-width: 460px)
+        display: block
+
+        table
+          tr
+            flex-direction: column
+            margin-bottom: 25px
+            max-height: 100% !important
+
+            td
+              padding-left: 0 !important
+
+
+      table
         tr
           display: flex
           justify-content: space-between
