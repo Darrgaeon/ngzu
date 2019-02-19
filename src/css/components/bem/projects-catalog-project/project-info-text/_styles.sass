@@ -1,0 +1,63 @@
+@import "../../../vars"
+
+.project-info
+  margin-top: 54px
+  margin-right: 10px
+
+  h4
+    font-weight: 500
+    line-height: normal
+    font-size: 22px
+
+    position: relative
+    margin-bottom: 18px
+
+    &:before
+      content: ""
+      width: calc(100% + 35px * 2)
+      height: 1px
+
+      background: $color-grey
+
+      position: absolute
+      top: 14px
+      left: -35px
+
+    span
+      position: relative
+      left: 12px
+
+      z-index: 1
+
+      background: $color-white
+
+      padding: 0 32px
+
+  p
+    font-weight: normal
+    line-height: 22px
+    font-size: 15px
+
+    margin-bottom: 30px
+
+  a
+    display: block
+
+    font-weight: normal
+    line-height: 31px
+    font-size: 15px
+
+    color: $color-blue
+
+    position: relative
+    top: -5px
+
+    span
+      color: $color-black
+
+  a:last-of-type
+    margin-bottom: 42px
+
+  //a:nth-child(2)
+    margin-bottom: 42px
+

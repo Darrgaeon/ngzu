@@ -1,0 +1,73 @@
+@import "../../../vars"
+
+.project-description-text
+  max-width: 633px
+
+  display: flex
+  flex-direction: column
+  flex: 1
+
+  margin-left: 30px
+
+  p
+    font-weight: normal
+    line-height: 22px
+    font-size: 15px
+
+
+  &__footer
+    margin-top: auto
+
+    p
+      font-weight: 500
+      line-height: normal
+      font-size: 15px
+      letter-spacing: 0.03em
+      text-transform: uppercase
+
+      color: $color-grey-light
+
+      margin-bottom: 25px
+
+      span
+        text-transform: none
+
+        margin-left: 4px
+
+        color: $color-black
+
+    .container-buttons
+      display: flex
+      flex: 1
+
+      .container-button
+        max-width: 251px
+
+        .button
+          width: 100%
+          padding: 21px 26px 23px 27px
+
+      .container-button-map
+        max-width: 259px
+
+        margin-left: 30px
+
+        .button-map
+          max-height: 61px
+
+          padding: 21px 46px 22px 51px
+          border: 2px solid #FD7004
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.03)
+          border-radius: 3px
+
+          background: url("/img/button-map.svg") center center
+
+          transition: $transition-duration
+
+          &:hover
+            border-color: $color-blue
+
+            span
+              color: $color-blue
+
+

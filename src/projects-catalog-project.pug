@@ -36,3 +36,59 @@ block content
                         each _ in Array(itemsInGallery)
                             .project-gallery__slide
                                 img(src="img/photo-right.jpg" data-rjs="2" alt="photo")
+
+                    .project-description-text
+                        p Краткое описание проекта, поэтому самая большая по территории страна мира - Россия, её площадь на 2018 год (после присоединения Крыма) составляет 17 124 442 км. Россия находится одновременно в Европе и в Азии. Площадь европейской части России около 3,986 млн. км
+
+                        .project-description-text__footer
+                            p Общая мощность #[span 375 кВт]
+                            .container-buttons
+                                .container-button
+                                    a(href="#").button.button-blue
+                                        span Заказать подобный проект
+                                    .button-shadow.button-shadow--blue
+
+                                .container-button-map
+                                    a(href="#").button.button-map
+                                        span Показать на карте РФ
+
+                .project-info
+                    h4
+                        span О проекте
+                    p Подробное описание проекта, поэтому самая большая по территории страна мира - Россия, её площадь на 2018 год (после присоединения Крыма) составляет 17 124 442 км. Россия находится одновременно в Европе и в Азии. Площадь европейской части России около 3,986 млн. км, что гораздо больше, чем площадь любой европейской страны. Европейская часть России составляет около 40% территории всей Европы.
+
+                    h4
+                        span Оборудование
+
+                    a(href="#") АД60С-T400-1РПМ1
+                        span  — дизельный генератор капотного исполнения на базе двигателя SDEC <br/>
+                    a(href="#") QVEK53-V880-D3DU
+                        span  — находится одновременно в Европе и в Азии, площадь европейской части России
+
+                    h4
+                        span Объем работ
+                    p Производство, поставка, техническое сопровождение
+
+                    h4
+                        span Состав проекта
+
+                    - var project_scope_item_num = 6
+                    .project-scope
+                        each _ in new Array(project_scope_item_num)
+                            .project-scope-item
+                                img(src="img/industry.jpg" alt="Project-scope")
+                                p Дизельгенератор АД60С-T400-1РПМ1
+                                span От 5 000 руб
+
+                                .container-button
+                                    a(href="#").button
+                                        span Подробнее
+
+
+
+
+
+
+
+
+
