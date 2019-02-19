@@ -1,0 +1,38 @@
+extends ./pug/base_template
+include ./pug/mixins/breadcrumbs
+include ./pug/mixins/industry-item
+
+block title
+    title Rusodot NZGU Projects-Catalog-Project
+
+block content
+    .container
+        .content-card
+            .content-heading
+                +add_breadcrumbs([
+                    {text: "Каталог продукции"},
+                    {text: "Выполненные проекты"},
+                    {text: "Промышленность"},
+                    {text: "Проект"}
+                ])
+                h2 ДГУ в контейнере «СЕВЕР» для Илимского ЦБК
+
+            - var itemsInGallery = 6;
+            .content-description.content-description-projects-catalog-project
+                .project-description
+                    .project-gallery-nav-container
+                        .project-gallery-nav-button.prev
+                            +add_svg({class: "project-gallery-nav-button__icon", icon: "gallery-nav-arrow"})
+
+                        .project-gallery-nav
+                            each _ in Array(itemsInGallery)
+                                .project-gallery-nav__slide
+                                    img(src="img/welding.jpg" data-rjs="2" alt="photo")
+
+                        .project-gallery-nav-button.next
+                            +add_svg({class: "project-gallery-nav-button__icon", icon: "gallery-nav-arrow"})
+
+                    .project-gallery
+                        each _ in Array(itemsInGallery)
+                            .project-gallery__slide
+                                img(src="img/photo-right.jpg" data-rjs="2" alt="photo")

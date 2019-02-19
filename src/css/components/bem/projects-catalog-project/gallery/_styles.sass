@@ -1,0 +1,79 @@
+@import "../../../vars"
+
+.project-gallery-nav-container
+  display: flex
+  flex-direction: column
+
+  .project-gallery-nav
+    max-width: 106px
+    max-height: 249px
+
+    .slick-slide
+      max-height: 73px
+      margin-bottom: 10px
+      position: relative
+
+    .slick-current
+      .project-gallery-nav__slide
+        border: 3px solid $color-blue
+
+    &__slide
+      width: 106px
+      height: 73px
+
+      margin-bottom: 10px
+
+      cursor: pointer
+
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+  .project-gallery-nav-button
+    display: flex
+    justify-content: center
+
+    height: 30px
+
+    border: 1px solid $color-grey
+    border-radius: 3px
+
+    cursor: pointer
+
+    .project-gallery-nav-button__icon
+      width: 17px
+      height: 17px
+
+      fill: none
+      stroke: $color-blue
+      stroke-width: 2px
+
+      position: relative
+      top: 6px
+
+    &:hover
+      .project-gallery-nav-button__icon
+        stroke: $color-grey-dark
+
+  .prev
+    margin-bottom: 9px
+
+  .next
+    transform: matrix(1, 0, 0, -1, 0, 0)
+
+.project-gallery
+  max-width: 426px
+
+  margin-left: 14px
+
+  &__slide
+    width: 426px
+    height: 320px
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+      border-radius: 3px

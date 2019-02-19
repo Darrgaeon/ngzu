@@ -21,6 +21,7 @@ function init() {
         require("./components/forms-validate")();
         require("./components/callback-contacts")();
         require("./components/callback-me-modal")();
+        require("./components/projects-catalog-project-gallery")();
 
         const PerfectScrollBar = require("perfect-scrollbar/dist/perfect-scrollbar.min");
         require("./components/compare-table-custom-scroll")(PerfectScrollBar);
