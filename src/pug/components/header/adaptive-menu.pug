@@ -3,7 +3,7 @@ include ../../mixins/svg_sprite
 .nav-bar-menu.d-flex.ml-auto
     ul.main-menu
         li
-            a(href="#") #[span Главная]
+            a(href="#").active #[span Главная]
         li
             a(href="#" role="dropdown" uk-toggle="target: #nav-bar-dropdown-menu")
                 +add_svg({class: "nav-bar-menu__burger", icon: "burger"})
