@@ -23,14 +23,15 @@ module.exports = function () {
         verticalSwiping: true,
         arrows: false,
 
-        // responsive: [
-        //     {
-        //         breakpoint: 664,
-        //         settings: {
-        //             vertical: false,
-        //             verticalSwiping: false,
-        //         }
-        //     },
+        responsive: [
+            {
+                breakpoint: 680,
+                settings: {
+                    vertical: false,
+                    verticalSwiping: false,
+                }
+            }
+        ]
         //     {
         //         breakpoint: 486,
         //         settings: {

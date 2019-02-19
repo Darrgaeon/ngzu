@@ -71,3 +71,30 @@
               color: $color-blue
 
 
+@media screen and (max-width: 1230px)
+  .project-description-text
+    &__footer
+      .container-buttons
+        flex-direction: column
+
+        .container-button
+          max-width: 100%
+
+        .button
+          text-align: center
+
+        .container-button-map
+          max-width: 100%
+
+          margin-left: 0
+          margin-top: 30px
+
+          .button-map
+            background: #FD7004
+            background-image: none !important
+
+            &:hover
+              background: $color-blue
+
+              span
+                color: $color-white
