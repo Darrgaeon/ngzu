@@ -4,8 +4,6 @@
   display: flex
   flex-wrap: wrap
 
-  width: 1210px
-
   padding-top: 12px
 
   &-item:nth-child(5),
@@ -14,7 +12,6 @@
 
 
   &-item
-    min-width: 283px
     min-height: 378px
 
     border-radius: 3px
@@ -25,7 +22,6 @@
 
 
     .container-image
-      width: 283px
       height: 176px
 
       img
@@ -62,13 +58,13 @@
         margin-top: 27px
 
         .button
-          //max-height: 52px
+          padding: 16px 15px 18px
+
+          text-align: center
 
           border: 2px solid #00A9FF
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.03)
           border-radius: 3px
-
-          padding: 16px 68px 18px
 
           span
             font-weight: 500
@@ -77,3 +73,17 @@
 
             color: $color-black
 
+@media screen and (max-width: 1160px)
+  .project-scope
+    &-item
+      lost-column: 1/3
+
+@media screen and (max-width: 850px)
+  .project-scope
+    &-item
+      lost-column: 1/2
+
+@media screen and (max-width: 570px)
+  .project-scope
+    &-item
+      lost-column: 1/1

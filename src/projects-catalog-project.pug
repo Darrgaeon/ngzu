@@ -72,9 +72,9 @@ block content
                     h4
                         span Состав проекта
 
-                    // - var project_scope_item_num = 6
-                    //.project-scope
-                        each _ in new Array(project_scope_item_num)
+                    - var itemsInProjectScope = 6;
+                    .project-scope
+                        each _ in new Array(itemsInProjectScope)
                             .project-scope-item
                                 .container-image
                                     img(src="img/industry.jpg" alt="Project-scope")
@@ -85,12 +85,3 @@ block content
                                     .container-button
                                         a(href="#").button
                                             span Подробнее
-
-
-
-
-
-
-
-
-
