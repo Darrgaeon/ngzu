@@ -30,25 +30,16 @@ module.exports = function () {
                     vertical: false,
                     verticalSwiping: false,
                 }
+            },
+            {
+                breakpoint: 630,
+                settings: {
+                    vertical: false,
+                    verticalSwiping: false,
+                    slidesToShow: 2
+                }
             }
         ]
-        //     {
-        //         breakpoint: 486,
-        //         settings: {
-        //             vertical: false,
-        //             verticalSwiping: false,
-        //             slidesToShow: 2
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 386,
-        //         settings: {
-        //             vertical: false,
-        //             verticalSwiping: false,
-        //             slidesToShow: 1
-        //         }
-        //     }
-        // ]
     });
 
     const $navButtonPrev = $galleryNavContainer.find(".project-gallery-nav-button.prev");
