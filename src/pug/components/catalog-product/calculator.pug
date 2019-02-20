@@ -56,3 +56,28 @@ form(action="#" method="post").product-variants
                 span Ручное управление
 
     .product-variant-footer
+        span.price Итого: 141 200 руб
+        span изначальная цена указана в базовой комплектации
+
+        .product-variant-footer-buy
+            .container-button
+                button(type="submit").button.button-blue
+                    span Заказать
+                .button-shadow.button-shadow--blue
+
+            .catalog-result-status
+                .catalog-result-status-in-stock
+                    +add_svg({class: "catalog-result-status-in-stock__icon", icon: "box"})
+                    +add_svg({
+                        class: "catalog-result-status-in-stock__status-icon in-stock",
+                        icon: "box-check"
+                    })
+
+                span.catalog-result-status-in-stock-text Есть на складе
+
+                label.catalog-result-compare
+                    input(type="checkbox" name=`catalog-result`).custom-checkbox
+                    .custom-checkbox-block
+                    span.catalog-result-compare-text Добавить в сравнение
+
+

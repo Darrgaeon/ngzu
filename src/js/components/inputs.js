@@ -4,7 +4,6 @@ module.exports = function () {
     const $productVariantThirdArrayItems = $(".product-variant--third .product-variant-item");
 
     const $customRadioBlock = $(".custom-radio-block");
-    // const $customCheckboxBlock = $(".custom-checkbox-block");
 
     const checkboxBeforeShow = "checkbox-before-show";
 
