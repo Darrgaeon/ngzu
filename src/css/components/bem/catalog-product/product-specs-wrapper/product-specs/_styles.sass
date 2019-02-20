@@ -1,0 +1,67 @@
+@import "../../../../vars"
+
+.product-specs
+  display: flex
+  flex-wrap: wrap
+
+  padding: 16px 20px 17px
+
+  background: $color-grey
+
+  .specs-table
+    //width: 356px
+    width: 314px
+
+    position: relative
+
+    &:before
+      content: ""
+      height: calc(100% + 16px + 17px)
+      width: 1px
+
+      background: #D7DDE7
+      position: absolute
+      top: -16px
+      right: -24px
+
+    thead
+      th
+        font-weight: 500
+        line-height: normal
+        font-size: 17px
+
+        padding-bottom: 15px
+
+      th:nth-child(2)
+        padding-right: 16px
+
+      th:last-child
+        padding-right: 1px
+
+    tbody
+      td:nth-child(2),
+      td:nth-child(3)
+        font-weight: 500
+        line-height: normal
+        font-size: 15px
+        
+      tr:first-child
+        td
+          padding-bottom: 9px
+
+  .other-specs
+    margin-left: 54px
+    margin-top: 17px
+
+    span
+      span
+        font-weight: 500
+        line-height: normal
+        font-size: 16px
+
+        color: $color-black
+
+    > span:first-child
+      display: block
+      margin-bottom: 12px
+
