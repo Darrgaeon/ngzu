@@ -1,0 +1,97 @@
+@import "../../../vars"
+
+.product-gallery
+  max-width: 426px
+  max-height: 320px
+
+  margin-bottom: 10px
+
+  &__slide
+    width: 426px
+    height: 320px
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+      border-radius: 3px
+
+
+.product-gallery-nav-container
+  display: flex
+  justify-content: space-between
+
+  max-width: 427px
+
+  .product-gallery-nav
+    max-width: 347px
+    max-height: 249px
+
+    .slick-slide
+      min-width: 109px
+      max-height: 73px
+
+      margin-right: 10px
+
+      //position: relative
+
+    .slick-slide:nth-child(3)
+      margin-right: 0
+
+    .slick-current
+      .product-gallery-nav__slide
+        border: 3px solid $color-blue
+        border-radius: 3px
+
+    &__slide
+      width: 109px !important
+      height: 74px
+
+      cursor: pointer
+
+      transition: $transition-duration
+
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+  .product-gallery-nav-button
+    display: flex
+    justify-content: center
+    align-items: center
+
+    width: 30px
+    height: 73px
+
+    border: 1px solid $color-grey
+    border-radius: 3px
+
+    cursor: pointer
+
+    &__icon
+      width: 17px
+      height: 17px
+
+      fill: none
+      stroke: $color-blue
+      stroke-width: 2px
+
+      transition: $transition-duration
+
+    &:hover
+      .product-gallery-nav-button__icon
+        stroke: $color-grey-dark
+
+  .prev
+    margin-bottom: 9px
+
+    .product-gallery-nav-button__icon
+      transform: rotate(-90deg)
+
+  .next
+    transform: matrix(1, 0, 0, -1, 0, 0)
+
+    .product-gallery-nav-button__icon
+      transform: rotate(90deg)

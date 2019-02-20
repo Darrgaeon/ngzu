@@ -1,0 +1,18 @@
+- var itemsInGallery = 6;
+.product-head
+    .product-gallery
+        each _ in Array(itemsInGallery)
+            .product-gallery__slide
+                img(src="img/photo-right.jpg" data-rjs="2" alt="photo")
+
+    .product-gallery-nav-container
+        .product-gallery-nav-button.prev
+            +add_svg({class: "product-gallery-nav-button__icon", icon: "gallery-nav-arrow"})
+
+        .product-gallery-nav
+            each _ in Array(itemsInGallery)
+                .product-gallery-nav__slide
+                    img(src="img/welding.jpg" data-rjs="2" alt="photo")
+
+        .product-gallery-nav-button.next
+            +add_svg({class: "product-gallery-nav-button__icon", icon: "gallery-nav-arrow"})
