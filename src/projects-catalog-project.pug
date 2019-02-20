@@ -44,12 +44,13 @@ block content
                             p Общая мощность #[span 375 кВт]
                             .container-buttons
                                 .container-button
-                                    a(href="#").button.button-blue
+                                    a(href="#" uk-toggle="target: #callback-me-modal").button.button-blue
                                         span Заказать подобный проект
                                     .button-shadow.button-shadow--blue
 
                                 .container-button-map
-                                    a(href="#").button.button-map
+                                    // тут должна быть прямая ссылка на яндекс-карту
+                                    a(href="https://yandex.ru/maps/" target="_blank").button.button-map
                                         span Показать на карте РФ
 
                 .project-info
