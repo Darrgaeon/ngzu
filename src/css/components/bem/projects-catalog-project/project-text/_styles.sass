@@ -77,6 +77,8 @@
       .container-buttons
         flex-direction: column
 
+        max-width: 100%
+
         .container-button
           max-width: 100%
 
@@ -98,3 +100,43 @@
 
               span
                 color: $color-white
+
+@media screen and (max-width: 970px)
+  .project-description-text
+    max-width: 100%
+
+    margin-left: 0
+
+    .container-buttons
+      flex-direction: row
+
+      .container-button-map
+        margin-top: 0
+        margin-left: auto
+
+
+@media screen and (max-width: 630px)
+  .project-description-text
+    .container-buttons
+      flex-direction: column
+
+      .container-button-map
+        margin-top: 20px
+        margin-left: 0
+
+
+
+@media screen and (max-width: 365px)
+  .project-description-text
+    &__footer
+      .container-buttons
+
+        .container-button
+          max-width: 100%
+
+          .button
+            padding: 21px 15px 23px
+
+        .container-button-map
+          .button-map
+            padding: 21px 15px 23px
