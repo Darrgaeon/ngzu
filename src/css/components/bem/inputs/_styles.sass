@@ -1,0 +1,70 @@
+@import "../../vars"
+
+.custom-radio, .custom-checkbox
+  display: none
+
+.custom-radio-block
+  display: block
+  cursor: pointer
+
+  width: 17px
+  height: 17px
+
+  background: $color-white
+  border: 1px solid #c7ced7
+  border-radius: 100%
+
+  position: relative
+
+  margin-right: 9px
+
+  &:before
+    content: ""
+    width: 7px
+    height: 7px
+
+    border-radius: 100%
+
+    background: linear-gradient(180deg, #F49020 0%, #FF6B00 100%)
+
+    position: absolute
+    top: calc(50% - 7px / 2)
+    left: calc(50% - 7px / 2)
+
+    opacity: 0
+
+    transition-duration: $transition-duration
+
+
+.custom-checkbox-block
+  display: block
+  cursor: pointer
+
+  width: 18px
+  height: 18px
+
+  background: $color-white
+  border: 1px solid #c7ced7
+  //border-radius: 100%
+
+  position: relative
+
+  margin-right: 9px
+
+  &:before
+    content: ""
+    width: 8px
+    height: 8px
+
+    //border-radius: 100%
+
+    background: linear-gradient(180deg, #F49020 0%, #FF6B00 100%)
+
+    position: absolute
+    top: calc(50% - 7px / 2)
+    left: calc(50% - 7px / 2)
+
+    opacity: 0
+
+    transition-duration: $transition-duration
+

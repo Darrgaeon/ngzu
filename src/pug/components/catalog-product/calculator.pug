@@ -1,0 +1,58 @@
+form(action="#" method="post").product-variants
+    .product-variant-wrapper
+        h5 Варианты исполнения
+
+        .product-variant.product-variant--first
+            label.product-variant-item(data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+                input(type="radio" name="type1" id="type-choice-1" value="type-choice-1" data-price="450000").custom-radio
+                .custom-radio-block
+                span Контейнер «СЕВЕР»
+
+            label.product-variant-item(data-toggle="tooltip" data-placement="top" data-html="true" title="<strong>Tooltip</strong> on <em>top</em>")
+                input(type="radio" name="type1" id="type-choice-2" value="type-choice-2" data-price="120000").custom-radio
+                .custom-radio-block
+                span Всепогодный кожух
+
+            label.product-variant-item
+                input(type="radio" name="type1" id="type-choice-3" value="type-choice-3" data-price="0" checked).custom-radio
+                .custom-radio-block
+                span На открытой раме
+
+            label.product-variant-item
+                input(type="radio" name="type1" id="type-choice-4" value="type-choice-4" data-price="300000").custom-radio
+                .custom-radio-block
+                span На шасси
+
+
+        .product-variant.product-variant--second
+            label.product-variant-item
+                input(type="checkbox" name="checkbox1" data-price="15000").custom-checkbox
+                .custom-checkbox-block
+                span Жидкотопливный подогреватель
+
+            label.product-variant-item(
+            data-toggle="tooltip"
+            data-placement="top"
+            title="При наличии постоянной сети ~220В электрический подогреватель охлаждающей жидкости является самым оптимальным способом поддерживать двигатель теплым для беспроблемного запуска в зимнее время."
+            )
+                input(type="checkbox" name="checkbox2" data-price="5000").custom-checkbox
+                .custom-checkbox-block
+                span Электрический подогреватель
+
+            label.product-variant-item
+                input(type="checkbox" name="checkbox3" data-price="9000").custom-checkbox
+                .custom-checkbox-block
+                span Аккумулятор
+
+        .product-variant.product-variant--third
+            label.product-variant-item
+                input(type="radio" name="control1" id="control-choice-1" value="control-choice-1" data-price="32000").custom-radio
+                .custom-radio-block
+                span Автоматический ввод резерва
+
+            label.product-variant-item
+                input(type="radio" name="control1" id="control-choice-2" value="control-choice-2" data-price="0" checked).custom-radio
+                .custom-radio-block
+                span Ручное управление
+
+    .product-variant-footer
