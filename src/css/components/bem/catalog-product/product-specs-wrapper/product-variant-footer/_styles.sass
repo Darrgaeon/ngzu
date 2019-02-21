@@ -4,5 +4,89 @@
   display: flex
   flex-wrap: wrap
 
+  margin-top: 15px
+
   .price
     margin-right: auto
+
+    font-weight: 500
+    line-height: normal
+    font-size: 20px
+
+    color: $color-black
+
+  > span:nth-child(2)
+    font-weight: normal
+    line-height: normal
+    font-size: 14px
+
+    color: $color-grey-light
+
+    position: relative
+    top: 4px
+
+  &-buy
+    display: flex
+    width: 100%
+
+    margin-top: 14px
+
+    .container-button
+      width: 30%
+      max-width: 221px
+
+      .button
+        width: 100%
+
+        padding: 17px 16px 21px 16px
+
+.catalog-result-status
+  display: flex
+  justify-content: center
+  align-items: center
+
+  margin-left: 41px
+  //margin-top: 16px
+
+  &-in-stock
+    position: relative
+
+    margin-right: 10px
+
+    &__icon
+      width: 20px
+      height: 20px
+
+    &__status-icon
+      width: 10px
+      height: 8px
+
+      fill: #009E52
+
+      position: absolute
+      top: 16px
+      left: 14px
+
+    &-text
+      font-weight: normal
+      line-height: normal
+      font-size: 14px
+
+      color: $color-black
+
+      position: relative
+      top: -2px
+
+  .catalog-result-compare
+    display: flex
+
+    margin-left: 31px
+
+    font-weight: normal
+    line-height: normal
+    font-size: 14px
+
+    color: $color-black
+
+    span
+      cursor: pointer
