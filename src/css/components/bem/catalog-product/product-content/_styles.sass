@@ -2,6 +2,21 @@
 
 .product-content
   margin-top: 64px
+
+  .active
+    &:before
+      display: block
+
+    span
+      color: $color-white
+
+      position: relative
+
+    &:hover
+      span
+        color: $color-white
+
+
   &-tabs
     ul
       margin: 0 -35px
@@ -35,40 +50,35 @@
 
       li
         margin: 0
-        padding: 0
         list-style: none
+        cursor: pointer
 
-        a
-          display: block
+        padding: 17px 35px 18px 35px
 
-          padding: 17px 35px 18px 35px
+        font-weight: 500
+        line-height: normal
+        font-size: 16px
 
-          font-weight: 500
-          line-height: normal
-          font-size: 16px
+        color: $color-black
 
-          color: $color-black
+        position: relative
 
-          position: relative
+        &:before
+          content: ""
+          width: 100%
+          height: 100%
 
-          &:before
-            content: ""
-            width: 100%
-            height: 100%
+          background: $color-blue
 
-            background: $color-blue
+          position: absolute
+          top: 0
+          left: 0
 
-            position: absolute
-            top: 0
-            left: 0
+          display: none
 
-            display: none
+        &:hover
+          span
+            color: $color-blue
 
-          &:hover
-            &:before
-              display: block
-
-            span
-              color: $color-white
-
-              position: relative
+  &-container
+    padding-top: 20px
