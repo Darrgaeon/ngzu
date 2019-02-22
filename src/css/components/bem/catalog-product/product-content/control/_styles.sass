@@ -1,0 +1,52 @@
+@import "../../../../vars"
+
+.product-control-items
+  display: flex
+
+
+.product-control-item
+  lost-column: 1/3 3 32px
+
+  width: 383px
+  flex: 1
+
+  .container-image
+    width: 178px
+    height: 215px
+
+    margin-bottom: 20px
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+      border-radius: 3px
+
+  .container-description
+    border: 1px solid #F7F7F7
+    border-radius: 3px
+
+
+    .header
+      font-weight: 500
+      line-height: normal
+      font-size: 16px
+
+      color: $color-blue
+      background: #EAF0F4
+
+      padding: 12px 15px 13px
+
+    .specs-control
+      tr:nth-child(even)
+        background: #F7F7F7
+
+      td
+        font-weight: normal
+        line-height: normal
+        font-size: 14px
+
+        color: #64738B
+
+        padding: 13px 15px

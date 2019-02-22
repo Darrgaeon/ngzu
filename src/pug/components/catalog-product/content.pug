@@ -27,8 +27,32 @@
         .product-content-photo-video
             p типа фотка
 
+        - var productControlItems = 3;
         .product-content-control
-            p курлоык
+            .product-control-items
+                each _ in new Array(productControlItems)
+                    .product-control-item
+                        .container-image
+                            img(src="img/photo-right.jpg")
+                        .container-description
+                            .header Всепогодный капот
+                            table.specs-control
+                                tbody
+                                    tr
+                                        td Шкаф управления дизельной генераторной установкой 1-ой (2-ой) степени автоматизации мощностью до 30 кВт
+                                    tr
+                                        td Контроллер системы управления - Smartgen
+                                    tr
+                                        td Контроллер системы управления - Smartgen
+                                    tr
+                                        td Контроллер системы управления - Smartgen
+                                    tr
+                                        td Контроллер системы управления - Smartgen
+
+
+
+
+
 
         .product-content-execution-options
             p гаф
