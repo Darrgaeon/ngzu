@@ -1,14 +1,15 @@
 @import "../../../../vars"
 
 .product-content-features
+  display: flex
 
-  .container-description-features
+  .specs-container
     max-width: 588px
 
-    border: 1px solid #F7F7F7
+    //border: 1px solid #F7F7F7
     border-radius: 3px
 
-    .header
+    &__header
       font-weight: 500
       line-height: normal
       font-size: 16px
@@ -18,9 +19,12 @@
 
       padding: 12px 15px 13px
 
-    .specs-features
+    &__table
       tr:nth-child(even)
         background: #F7F7F7
+
+      tr
+        border: 1px solid #F7F7F7
 
       th, td
         max-width: calc(588px / 2)
@@ -38,3 +42,85 @@
 
       th
         color: $color-black
+
+
+  .container-accordion
+    max-width: 588px
+
+    flex: 1
+
+    margin-left: auto
+
+    .card
+      border: 1px solid #F7F7F7
+      border-radius: 3px
+
+      margin-bottom: 15px
+
+      &-header
+        background: #EAF0F4
+
+        padding: 12px 15px 13px
+
+        button
+          font-weight: 500
+          line-height: normal
+          font-size: 16px
+
+          color: $color-black
+          background: #EAF0F4
+
+          border-width: 0
+
+          cursor: pointer
+          outline: none
+
+          transition: $transition-duration
+
+          &:hover
+            color: $color-blue
+
+        &__button-icon
+          width: 14px
+          height: 14px
+
+          fill: $color-blue
+
+          transform: rotate(-90deg)
+
+          margin-right: 10px
+
+          position: relative
+          top: 2px
+
+          transition: .3s
+
+        .icon-active
+          transform: rotate(90deg)
+
+      &-table
+        tr:nth-child(even)
+          background: #F7F7F7
+
+        th, td
+          max-width: calc(588px / 2)
+
+          font-weight: normal
+          line-height: normal
+          font-size: 14px
+
+          padding: 12px 15px 11px
+
+        td
+          color: #64738B
+
+          border-right: 1px solid #EAF0F4
+
+        th
+          color: $color-black
+
+    .card:nth-child(1),
+    .card:nth-child(2)
+      .card-table
+        display: none
+

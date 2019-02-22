@@ -25,7 +25,7 @@ function init() {
         require("./components/product-gallery")();
         require("./components/inputs")();
         require("./components/product-content-spoilers")();
-
+        require("./components/accordion")();
 
         const PerfectScrollBar = require("perfect-scrollbar/dist/perfect-scrollbar.min");
         require("./components/compare-table-custom-scroll")(PerfectScrollBar);
