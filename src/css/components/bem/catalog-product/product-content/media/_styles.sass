@@ -1,0 +1,72 @@
+@import "../../../../vars"
+
+.product-content-media
+  .product-content-gallery
+    display: flex
+    flex-wrap: wrap
+
+    &-item
+      width: 189px
+      height: 136px
+
+      lost-column: 1/6 6 15px
+
+      margin-bottom: 15px
+
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+  .product-content-videos
+    display: flex
+    flex-wrap: wrap
+
+    &-item
+      width: 393px
+      height: 247px
+
+      lost-column: 1/3 3 15px
+
+      &-poster
+        position: relative
+
+        &:hover
+          .play-button
+            opacity: .7
+
+            &__icon
+              opacity: .7
+
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+
+
+        .play-button
+          display: flex
+          align-items: center
+          justify-content: center
+
+          width: 60px
+          height: 60px
+          border-radius: 100%
+
+          background: $color-blue
+
+          position: absolute
+          top: calc(50% - 51px/2)
+          left: calc(50% - 57px/2)
+
+          transition-duration: $transition-duration
+
+          &__icon
+            width: 20px
+            height: 25px
+
+            fill: $color-white
+
+            position: relative
+            top: 0
+            left: 3px
