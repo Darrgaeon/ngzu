@@ -2,6 +2,7 @@
 
 .container-features
   display: flex
+  flex-wrap: wrap
 
   .specs-container
     max-width: 588px
@@ -47,7 +48,7 @@
 
     flex: 1
 
-    margin-left: auto
+    margin-left: 35px
 
     .card
       border: 1px solid #F7F7F7
@@ -121,3 +122,24 @@
     .card:nth-child(2)
       .card-table
         display: none
+
+
+@media screen and (max-width: 1000px)
+  .container-features
+    .specs-container
+      width: 100%
+      max-width: 100%
+
+      margin-bottom: 30px
+
+      &__table
+        width: 100%
+
+    .container-accordion
+      max-width: 100%
+
+      margin-left: 0
+
+      .card
+        table
+          width: 100%

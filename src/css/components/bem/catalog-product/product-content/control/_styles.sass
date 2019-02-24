@@ -2,13 +2,22 @@
 
 .product-control-items
   display: flex
+  flex-wrap: wrap
 
 
 .product-control-item
-  lost-column: 1/3 3 32px
-
   width: 383px
   flex: 1
+
+  lost-column: 1/3 3 32px
+
+  margin-bottom: 20px
+
+  @media screen and (max-width: 800px)
+    lost-column: 1/2
+
+  @media screen and (max-width: 550px)
+    lost-column: 1/1
 
   .container-image
     width: 178px
