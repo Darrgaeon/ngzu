@@ -25,6 +25,10 @@
 
       tr
         border: 1px solid #F7F7F7
+        transition: $transition-duration
+
+        &:hover
+          background: $color-grey
 
       th, td
         max-width: calc(588px / 2)
@@ -100,6 +104,13 @@
       &-table
         tr:nth-child(even)
           background: #F7F7F7
+
+        tr
+          transition: $transition-duration
+
+          &:hover
+            background: $color-grey
+
 
         th, td
           max-width: calc(588px / 2)
