@@ -19,16 +19,19 @@ module.exports = function () {
         asNavFor: $gallery,
         infinite: true,
         focusOnSelect: true,
-        // vertical: true,
-        // verticalSwiping: true,
         arrows: false,
 
         responsive: [
             {
-                breakpoint: 680,
+                breakpoint: 685,
                 settings: {
-                    vertical: false,
-                    verticalSwiping: false,
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 433,
+                settings: {
+                    slidesToShow: 1
                 }
             }
         ]

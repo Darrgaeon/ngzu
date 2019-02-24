@@ -10,7 +10,6 @@
   border-radius: 3px
 
   .specs-table
-    //width: 356px
     width: 314px
 
     position: relative
@@ -66,3 +65,18 @@
       display: block
       margin-bottom: 12px
 
+
+@media screen and (max-width: 1150px)
+  .product-specs
+    .specs-table
+      width: 100%
+
+      &:before
+        height: 1px
+        width: calc(100% + 20px* 2)
+
+        top: 87px
+        right: -20px
+
+    .other-specs
+      margin-left: 0
