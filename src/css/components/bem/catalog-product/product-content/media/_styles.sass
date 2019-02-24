@@ -13,6 +13,18 @@
 
       margin-bottom: 15px
 
+      @media screen and (max-width: 1000px)
+        lost-column: 1/4
+
+      @media screen and (max-width: 800px)
+        lost-column: 1/3
+
+      @media screen and (max-width: 600px)
+        lost-column: 1/2
+
+      @media screen and (max-width: 430px)
+        lost-column: 1/1
+
       img
         width: 100%
         height: 100%
@@ -28,7 +40,18 @@
 
       lost-column: 1/3 3 15px
 
+      margin-bottom: 20px
+
+      @media screen and (max-width: 1000px)
+        lost-column: 1/2
+
+      @media screen and (max-width: 600px)
+        lost-column: 1/1
+
       &-poster
+        width: 100%
+        height: 100%
+
         position: relative
 
         &:hover
