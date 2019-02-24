@@ -12,6 +12,8 @@ function init() {
     require("slick-carousel/slick/slick");
     require("jquery-validation/dist/jquery.validate");
     require("jquery.maskedinput/src/jquery.maskedinput");
+    require("@fancyapps/fancybox/dist/jquery.fancybox");
+    // require("baguettebox.js/dist/baguetteBox");
 
     $(document).ready(function () {
         require("./components/mobile-menu")();
@@ -26,6 +28,7 @@ function init() {
         require("./components/inputs")();
         require("./components/product-content-spoilers")();
         require("./components/accordion")();
+        require("./components/product-content-gallery")();
 
         const PerfectScrollBar = require("perfect-scrollbar/dist/perfect-scrollbar.min");
         require("./components/compare-table-custom-scroll")(PerfectScrollBar);

@@ -17,154 +17,29 @@
             p Но история компании началась намного раньше, в 1902 году, когда Чарльз Бодуэн открыл вблизи Марселя цех по выплавке цветного металла. В таком замечательном месте как Марсель с его морскими традициями Чарльз вскоре решил производить небольшие бензиновые двигатели, объединённые в одном корпусе с коробкой передач, мощностью 5 лошадиных сил для прогулочных лодок.
             p Технология производства была очень простой, многие детали производились в его же собственном литейном цехе (например, шатун был бронзовый и без вкладышей). Система смазки была общая для двигателя и коробки передач.
 
-        .product-content-features
-            .specs-container
-                .specs-container__header Основные характеристики
-                table.specs-container__table
-                    tbody
-                        tr
-                            td Мощность номинальная, кВт
-                            th 100
-                        tr
-                            td Автономная работа на 75% нагрузки без дозаправки, ч
-                            th 17
-                        tr
-                            td Мощность номинальная, кВт
-                            th 200
-                        tr
-                            td Мощность номинальная, кВт
-                            th 200
-                        tr
-                            td Мощность номинальная, кВт
-                            th 200
-                        tr
-                            td Мощность номинальная, кВт
-                            th глушитель, топливный бак, АКБ, ЩУ с цифровой панелью, станция запр. маслом и ОЖ
-                        tr
-                            td Мощность номинальная, кВт
-                            th 200
-                        tr
-                            td Мощность номинальная, кВт
-                            th 200
-                        tr
-                            td Мощность номинальная, кВт
-                            th 200
+
+        include ./product-content-features
 
 
-            .container-accordion
-                .card
-                    .card-header
-                        button(type="button")
-                            +add_svg({class: "card-header__button-icon", icon: "nav-arrow"})
-                            span Контроллер
-                    .card-table
-                        table
-                            tbody
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 100
-                                tr
-                                    td Автономная работа на 75% нагрузки без дозаправки, ч
-                                    th 17
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th глушитель, топливный бак, АКБ, ЩУ с цифровой панелью, станция запр. маслом и ОЖ
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
+        .product-content-media
+            .product-content-gallery
+                - var itemsInGallery = 12;
 
-                .card
-                    .card-header
-                        button(type="button")
-                            +add_svg({class: "card-header__button-icon", icon: "nav-arrow"})
-                            span Генератор
-                    .card-table
-                        table
-                            tbody
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 100
-                                tr
-                                    td Автономная работа на 75% нагрузки без дозаправки, ч
-                                    th 17
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th глушитель, топливный бак, АКБ, ЩУ с цифровой панелью, станция запр. маслом и ОЖ
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
+                each _ in Array(itemsInGallery)
+                    a(href="img/welding.jpg" data-fancybox="product-gallery").product-content-gallery-item
+                        img(src="img/welding.jpg" data-rjs="2" alt="photo")
 
-                .card
-                    .card-header
-                        button(type="button")
-                            +add_svg({class: "card-header__button-icon icon-active", icon: "nav-arrow"})
-                            span Двигатель
-                    .card-table
-                        table
-                            tbody
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 100
-                                tr
-                                    td Автономная работа на 75% нагрузки без дозаправки, ч
-                                    th 17
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th глушитель, топливный бак, АКБ, ЩУ с цифровой панелью, станция запр. маслом и ОЖ
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
-                                tr
-                                    td Мощность номинальная, кВт
-                                    th 200
+            .product-content-videos
+                - var itemsInGallery = 3;
 
+                each _ in Array(itemsInGallery)
+                    a(href="static/video.webm" data-fancybox="product-gallery").product-content-videos-item
+                        .product-content-videos-item-poster
+                            img(src="img/welding.jpg")
 
+                            .play-button
+                                +add_svg({class: "play-button__icon", icon: "play-button"})
 
-
-        .product-content-photo-video
-            p типа фотка
 
         - var productControlItems = 3;
         .product-content-control
@@ -172,7 +47,7 @@
                 each _ in new Array(productControlItems)
                     .product-control-item
                         .container-image
-                            img(src="img/photo-right.jpg")
+                            img(src="img/photo-right.jpg" alt="control-photo")
                         .container-description
                             .header Всепогодный капот
                             table.specs-control
@@ -187,9 +62,6 @@
                                         td Контроллер системы управления - Smartgen
                                     tr
                                         td Контроллер системы управления - Smartgen
-
-
-
 
 
         - var productExecutionOptionsItems = 3;
@@ -213,5 +85,3 @@
                                         td Контроллер системы управления - Smartgen
                                     tr
                                         td Контроллер системы управления - Smartgen
-
-
