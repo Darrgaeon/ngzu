@@ -29,6 +29,36 @@ block content
 					.container
 						.home-page-gallery__item-circle-blue
 
+							.home-page-gallery-item__description
+								h1 Надежный поставщик энергии вашего бизнеса
+								p Огромный опыт производства, монтажа и поставки дизельных генераторов по всей России
+
+								.gallery-item-features-list
+									.gallery-item-features-list-item
+										.gallery-item-features-list-item-icon-container
+											+add_svg({class: "gallery-provider-item__icon", icon: "cup"})
+										.gallery-item-features-list-item__description Гарантия на всю заводскую продукцию 2 года, либо 2000 моточасов
+
+									.gallery-item-features-list-item
+										.gallery-item-features-list-item-icon-container
+											+add_svg({
+												class: "gallery-item-features-list-item__icon",
+												icon: "shield-with-check"
+											})
+										.gallery-item-features-list-item__description Каждая ДЭС проверяется минимум в течение 2-х часов, что гарантирует отсутствие брака
+
+									.gallery-item-features-list-item
+										.gallery-item-features-list-item-icon-container
+											+add_svg({class: "gallery-item-features-list-item__icon", icon: "timer"})
+										.gallery-item-features-list-item__description Свой склад, поэтому отгрузка товара происходит в течение 1-2 дней после оплаты
+
+									.button-container.go-to-catalog-button
+										a(href="#").button.button-orange
+											span Перейти в каталог
+												+add_svg({class: "button__icon", icon: "next-arrow"})
+											//.button-shadow.button-shadow--orange
+
+
 
 						a(href="#").home-page-gallery__item-generator
 							img(src="img/generator.png")
