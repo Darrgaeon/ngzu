@@ -212,11 +212,14 @@
                 <div class="home-page-gallery__item-circle-blue">
                   <div class="home-page-gallery-item__description">
                     <h1>Надежный поставщик энергии вашего бизнеса</h1>
-                    <p>Огромный опыт производства, монтажа и поставки дизельных генераторов по всей России</p>
+                    <p>
+                      Огромный опыт производства, монтажа и поставки дизельных генераторов </br>
+                      по всей России
+                    </p>
                     <div class="gallery-item-features-list">
                       <div class="gallery-item-features-list-item">
                         <div class="gallery-item-features-list-item-icon-container">
-                                <svg class="gallery-provider-item__icon">
+                                <svg class="gallery-item-features-list-item__icon">
                                   <use xlink:href="svg/sprite.svg#svg--cup"></use>
                                 </svg>
                         </div>
@@ -238,11 +241,15 @@
                         </div>
                         <div class="gallery-item-features-list-item__description">Свой склад, поэтому отгрузка товара происходит в течение 1-2 дней после оплаты</div>
                       </div>
-                      <div class="button-container go-to-catalog-button"><a class="button button-orange" href="#"><span>Перейти в каталог
-                                  <svg class="button__icon">
-                                    <use xlink:href="svg/sprite.svg#svg--next-arrow"></use>
-                                  </svg></span>
-                          <!--.button-shadow.button-shadow--orange--></a></div>
+                      <!--.button-container.go-to-catalog-button
+                      a(href="#").button.button-orange
+                      	span Перейти в каталог
+                      		+add_svg({class: "button__icon", icon: "next-arrow"})
+                      	//.button-shadow.button-shadow--orange
+                      
+                      
+                      
+                      -->
                     </div>
                   </div>
                 </div><a class="home-page-gallery__item-generator" href="#"><img src="img/generator.png"></a>
