@@ -28,8 +28,10 @@ function init() {
         require("./components/inputs")();
         require("./components/product-content-spoilers")();
         require("./components/accordion")();
-        require("./components/product-content-gallery")();
+        require("./components/product-content-fancybox")();
         require("./components/home-gallery-navigation")();
+        require("./components/homepage-gallery")();
+
 
         const PerfectScrollBar = require("perfect-scrollbar/dist/perfect-scrollbar.min");
         require("./components/compare-table-custom-scroll")(PerfectScrollBar);
