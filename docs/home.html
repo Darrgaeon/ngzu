@@ -192,20 +192,28 @@
     <section class="content">
       <div class="container">
         <section class="slider-container">
-          <!--.slider-navigation-container-->
-          <!--	.home-page-gallery-navigation-wrapper.container-->
-          <!--		.home-page-gallery-close-button Скрыть-->
-          <!--		.home-page-gallery-navigation-->
-          <!--			.gallery-nav-button.gallery-nav-button--prev-->
-          <!--				+add_svg({class: "gallery-nav-button__icon", icon: "gallery-nav-arrow"})-->
-          <!---->
-          <!--			ul.gallery-nav-items-->
-          <!--				li Акции и скидки-->
-          <!--				li.active О нас-->
-          <!--				li Оптовые заказы-->
-          <!---->
-          <!--			.gallery-nav-button.gallery-nav-button--next-->
-          <!--				+add_svg({class: "gallery-nav-button__icon", icon: "gallery-nav-arrow"})-->
+          <div class="slider-navigation-container">
+            <div class="home-page-gallery-navigation-wrapper container">
+              <div class="home-page-gallery-close-button">Скрыть</div>
+              <div class="home-page-gallery-navigation">
+                <div class="gallery-nav-button gallery-nav-button--prev">
+                        <svg class="gallery-nav-button__icon">
+                          <use xlink:href="svg/sprite.svg#svg--gallery-nav-arrow"></use>
+                        </svg>
+                </div>
+                <ul class="gallery-nav-items">
+                  <li>Акции и скидки</li>
+                  <li class="active">О нас</li>
+                  <li>Оптовые заказы</li>
+                </ul>
+                <div class="gallery-nav-button gallery-nav-button--next">
+                        <svg class="gallery-nav-button__icon">
+                          <use xlink:href="svg/sprite.svg#svg--gallery-nav-arrow"></use>
+                        </svg>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="home-page-gallery slick-gallery">
             <div class="home-page-gallery-container">
               <div class="container">
