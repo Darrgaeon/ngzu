@@ -5,6 +5,8 @@
   left: 177px
   top: 110px
 
+  width: fit-content
+
   h1
     line-height: 40px
     font-size: 32px
@@ -30,11 +32,11 @@
     margin-bottom: 34px
 
 .gallery-item-features-list
+  margin-bottom: 60px
 
   &-item
     display: flex
 
-    //margin: 10px 0
     margin-bottom: 20px
 
     &-icon-container
@@ -55,10 +57,29 @@
 
       color: $color-white
 
-
   &-item:nth-child(1)
     .gallery-item-features-list-item__description
       max-width: 270px
+
+
+.go-to-catalog-button
+  max-width: 224px
+  max-height: 48px
+
+  position: relative
+
+  z-index: 3
+
+  .button
+    padding: 15px 26px 15px 31px
+
+    &__icon
+      width: 17px
+      height: 12px
+
+      fill: $color-white
+
+      margin-left: 7px
 
 
 
