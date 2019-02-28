@@ -1,0 +1,70 @@
+@import "../../../vars"
+
+.generator-form
+  &-download
+    display: flex
+    align-content: center
+    justify-content: center
+
+    margin-top: 10px
+    margin-left: -15px
+    margin-right: -15px
+    font-size: 15px
+
+    a
+      display: flex
+      align-items: center
+
+      color: #FC7307
+      //text-decoration: underline dotted
+      text-decoration: none !important
+
+      transition-duration: $transition-duration
+      line-height: 19px / 15px * 1em
+
+      span
+        border-bottom: 1px dotted #FC7307
+
+      @media not all and (pointer: coarse)
+        &:hover
+          color: $color-blue
+
+          span
+            border-color: $color-blue
+
+      @media screen and (min-width: 1025px)
+        &:hover
+          color: $color-blue
+
+          span
+            border-color: $color-blue
+
+      &:active
+        color: $color-blue
+
+        span
+          border-color: $color-blue
+
+    @media not all and (pointer: coarse)
+      a:hover &__icon
+        fill: $color-blue
+
+    @media screen and (min-width: 1025px)
+      a:hover &__icon
+        fill: $color-blue
+
+    a:active &__icon
+      fill: $color-blue
+
+    &__size
+      color: gray
+      text-decoration: none !important
+      margin-left: 3px
+
+    &__icon
+      fill: #F49020
+      width: 16px
+      height: 16px
+      margin-right: 7px
+
+      transition-duration: $transition-duration

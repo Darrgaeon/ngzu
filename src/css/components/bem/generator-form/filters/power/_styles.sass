@@ -1,0 +1,52 @@
+@import "../../../../vars"
+
+.generator
+  &-form
+    &-power
+      padding-top: 12px
+      padding-bottom: 15px
+      position: relative
+
+      font-size: 15px
+
+      & > span
+        margin-right: 16px
+
+      & > label
+        color: #88919D
+        position: relative
+        z-index: 2
+
+        & + label
+          &:before
+            content: "/"
+            display: inline-block
+
+            margin-left: 7px
+            margin-right: 4px
+            z-index: -1
+
+      input[type="radio"]
+        display: none
+
+        & + span
+          color: #88919D
+          border-bottom: 1px dotted #88919D
+          transition-duration: $transition-duration
+          cursor: pointer
+
+        &:checked
+          & + span
+            color: #FC7307
+            text-decoration: none
+
+            border-bottom-color: transparent
+
+  &-slider
+    position: absolute
+    bottom: -7px
+
+    &-status
+      z-index: 2
+      margin-top: 11px
+      margin-bottom: 15px

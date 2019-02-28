@@ -1,0 +1,25 @@
+@import "../../vars"
+
+.generator
+  &-container
+    padding-top: 39px
+    padding-bottom: 75px
+
+    .flex-row
+      align-items: flex-start
+
+    @media screen and (max-width: 700px)
+      padding-bottom: 45px
+
+  &-form
+    @media screen and (max-width: 700px)
+      flex: 1 1 100%
+
+  &-result
+    min-height: 602px
+
+    @media screen and (max-width: 700px)
+      margin: 15px 0 0
+
+      flex: 1 1 100%
+      min-height: 500px

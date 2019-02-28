@@ -1,2 +1,102 @@
-.container
+include ../../mixins/svg_sprite
 
+section.generator-container
+    .container.flex-row
+        form(action="#").generator-form
+            .generator-form__heading.generator-form-bottom-border
+                h6 Дизельный генератор
+
+            .generator-form__filters
+                .generator-form-power.flex-row.generator-form-bottom-border
+                    span.fw-medium Мощность
+                    label
+                        input(type="radio" name="power" checked)
+                        span кВт
+
+                    label
+                        input(type="radio" name="power")
+                        span кВа
+
+                    .generator-slider-wrapper
+                        .generator-slider-status
+                            label.generator-slider-status__from
+                                | От
+                                input(type='number' name='range-min' value='0' min="0" max="2000")
+                            label.generator-slider-status__to
+                                | До
+                                input(type='number' name='range-max' value='100' min="0" max="2000")
+
+                        .generator-slider
+                            input.range-input(name='range' data-min='0' data-max='2000')
+
+                .generator-form-engine.generator-form-bottom-border
+                    .chosen-select-container
+                        //- +add_svg({class: "chosen-select-container__icon", icon: "arrow"})
+                        select(data-placeholder="Выбрать двигатель" multiple).chosen-select.chosen-theme
+                            option Опция 1
+                            option Опция 2
+                            option Опция 3
+                            option Опция 4
+                            option Опция 5
+                            option Lorem.
+                            option Lorem ipsum.
+                            option Lorem ipsum dolor.
+                            option Lorem ipsum dolor sit.
+
+                .generator-form-voltage.generator-form-bottom-border
+                    span.fw-medium Напряжение
+
+                    .flex-row
+                        label
+                            input(type="radio" name="voltage").custom-checkbox
+                            .custom-checkbox-block
+                            | 10,5 кВ
+
+                        label
+                            input(type="radio" name="voltage" checked).custom-checkbox
+                            .custom-checkbox-block
+                            | 400 В
+
+                        label
+                            input(type="radio" name="voltage").custom-checkbox
+                            .custom-checkbox-block
+                            | 6,3 кВ
+
+                .generator-form-variant.generator-form-bottom-border
+                    span.fw-medium Вариант исполнения
+
+                    .flex-row
+                        label
+                            input(type="checkbox" name="variant1").custom-checkbox
+                            .custom-checkbox-block
+                            | На раме
+
+                        label
+                            input(type="checkbox" name="variant2").custom-checkbox
+                            .custom-checkbox-block
+                            | Всепогодный кожух
+
+                        label
+                            input(type="checkbox" name="variant3").custom-checkbox
+                            .custom-checkbox-block
+                            | На шасси
+
+                        label
+                            input(type="checkbox" name="variant4" checked).custom-checkbox
+                            .custom-checkbox-block
+                            | Контейнер «Север»
+
+                .generator-form-submit
+                    .button-container
+                        button(type="submit").button.button--orange
+                            span Подобрать
+                        //.button-shadow.button-shadow--orange
+
+                    .generator-form-download
+                        a(href="#")
+                            +add_svg({class: "generator-form-download__icon", icon: "download"})
+                            span Скачать опросный лист
+
+                        span.generator-form-download__size (0.5 мб)
+
+        .generator-result

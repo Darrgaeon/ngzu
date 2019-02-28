@@ -310,7 +310,7 @@
               </div>
             </div>
             <!-- 3 слайд-->
-            <div class="home-page-gallery-container home-page-gallery-container-video">
+            <div class="home-page-gallery-container">
               <video class="gallery-video">
                 <source src="static/video.webm" type="video/webm">
                 <source src="static/video.mp4" type="video/mp4">Простите но ваш браузер не поддерживает HTML5 видео
@@ -321,6 +321,100 @@
       </section>
       <section class="home-page-gallery-container-open-button">
         <div class="button-open">Показать</div>
+      </section>
+      <section class="generator-container">
+        <div class="container flex-row">
+          <form class="generator-form" action="#">
+            <div class="generator-form__heading generator-form-bottom-border">
+              <h6>Дизельный генератор</h6>
+            </div>
+            <div class="generator-form__filters">
+              <div class="generator-form-power flex-row generator-form-bottom-border"><span class="fw-medium">Мощность</span>
+                <label>
+                  <input type="radio" name="power" checked><span>кВт</span>
+                </label>
+                <label>
+                  <input type="radio" name="power"><span>кВа</span>
+                </label>
+                <div class="generator-slider-wrapper">
+                  <div class="generator-slider-status">
+                    <label class="generator-slider-status__from">От
+                      <input type="number" name="range-min" value="0" min="0" max="2000">
+                    </label>
+                    <label class="generator-slider-status__to">До
+                      <input type="number" name="range-max" value="100" min="0" max="2000">
+                    </label>
+                  </div>
+                  <div class="generator-slider">
+                    <input class="range-input" name="range" data-min="0" data-max="2000">
+                  </div>
+                </div>
+              </div>
+              <div class="generator-form-engine generator-form-bottom-border">
+                <div class="chosen-select-container">
+                  <select class="chosen-select chosen-theme" data-placeholder="Выбрать двигатель" multiple>
+                    <option>Опция 1</option>
+                    <option>Опция 2</option>
+                    <option>Опция 3</option>
+                    <option>Опция 4</option>
+                    <option>Опция 5</option>
+                    <option>Lorem.</option>
+                    <option>Lorem ipsum.</option>
+                    <option>Lorem ipsum dolor.</option>
+                    <option>Lorem ipsum dolor sit.</option>
+                  </select>
+                </div>
+              </div>
+              <div class="generator-form-voltage generator-form-bottom-border"><span class="fw-medium">Напряжение</span>
+                <div class="flex-row">
+                  <label>
+                    <input class="custom-checkbox" type="radio" name="voltage">
+                    <div class="custom-checkbox-block"></div>10,5 кВ
+                  </label>
+                  <label>
+                    <input class="custom-checkbox" type="radio" name="voltage" checked>
+                    <div class="custom-checkbox-block"></div>400 В
+                  </label>
+                  <label>
+                    <input class="custom-checkbox" type="radio" name="voltage">
+                    <div class="custom-checkbox-block"></div>6,3 кВ
+                  </label>
+                </div>
+              </div>
+              <div class="generator-form-variant generator-form-bottom-border"><span class="fw-medium">Вариант исполнения</span>
+                <div class="flex-row">
+                  <label>
+                    <input class="custom-checkbox" type="checkbox" name="variant1">
+                    <div class="custom-checkbox-block"></div>На раме
+                  </label>
+                  <label>
+                    <input class="custom-checkbox" type="checkbox" name="variant2">
+                    <div class="custom-checkbox-block"></div>Всепогодный кожух
+                  </label>
+                  <label>
+                    <input class="custom-checkbox" type="checkbox" name="variant3">
+                    <div class="custom-checkbox-block"></div>На шасси
+                  </label>
+                  <label>
+                    <input class="custom-checkbox" type="checkbox" name="variant4" checked>
+                    <div class="custom-checkbox-block"></div>Контейнер «Север»
+                  </label>
+                </div>
+              </div>
+              <div class="generator-form-submit">
+                <div class="button-container">
+                  <button class="button button--orange" type="submit"><span>Подобрать</span></button>
+                  <!--.button-shadow.button-shadow--orange-->
+                </div>
+                <div class="generator-form-download"><a href="#">
+                          <svg class="generator-form-download__icon">
+                            <use xlink:href="svg/sprite.svg#svg--download"></use>
+                          </svg><span>Скачать опросный лист</span></a><span class="generator-form-download__size">(0.5 мб)</span></div>
+              </div>
+            </div>
+          </form>
+          <div class="generator-result"></div>
+        </div>
       </section>
     </section>
     <!--footer-->
