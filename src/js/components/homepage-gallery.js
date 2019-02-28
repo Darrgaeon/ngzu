@@ -70,7 +70,6 @@ module.exports = function () {
         }
 
         $link.data("lockedAt", +new Date());
-        console.log("номер: ", $homeGallery.slick("slickCurrentSlide"));
 
         if($homeGallery.slick("slickCurrentSlide") === 2) {
             $galleryVideo[0].play();
@@ -112,5 +111,22 @@ module.exports = function () {
         if($homeGallery.slick("slickCurrentSlide") === 2) {
             $galleryVideo[0].play();
         }
+    });
+
+    const $buttonClose = $(".home-page-gallery-close-button");
+    const $buttonOpen = $(".home-page-gallery-container-open-button .button-open");
+    const $sliderContainer = $(".slider-container");
+    const transitionDuration = 800;
+
+    $buttonClose.click(function () {
+        $sliderContainer.slideToggle(transitionDuration);
+        setTimeout(function () {
+            $buttonOpen.show()
+        }, 800)
+    });
+
+    $buttonOpen.click(function () {
+        $buttonOpen.hide();
+        $sliderContainer.slideToggle(transitionDuration);
     });
 };

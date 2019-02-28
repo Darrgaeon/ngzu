@@ -1,0 +1,113 @@
+//.home-page-gallery-close-button Скрыть
+section.slider-container
+        .container
+            .slider-navigation-container
+                .home-page-gallery-close-button Скрыть
+                .home-page-gallery-navigation-wrapper.container
+                    .home-page-gallery-navigation
+                        .gallery-nav-button.gallery-nav-button--prev
+                            +add_svg({class: "gallery-nav-button__icon", icon: "gallery-nav-arrow"})
+
+                        ul.gallery-nav-items
+                            li Акции и скидки
+                            li.active О нас
+                            li Оптовые заказы
+
+                        .gallery-nav-button.gallery-nav-button--next
+                            +add_svg({class: "gallery-nav-button__icon", icon: "gallery-nav-arrow"})
+
+            // галерея
+            .home-page-gallery.slick-gallery
+
+                //1 слайд
+                .home-page-gallery-container
+                    .container
+                        .home-page-gallery__item-circle-blue
+                            .home-page-gallery-item__description
+                                h1 Акции и скидки
+                                p
+                                    | Огромный опыт производства, монтажа и поставки дизельных генераторов </br>
+                                    | по всей России
+
+                                .gallery-item-features-list
+                                    .gallery-item-features-list-item
+                                        .gallery-item-features-list-item-icon-container
+                                            +add_svg({class: "gallery-item-features-list-item__icon", icon: "cup"})
+                                        .gallery-item-features-list-item__description Гарантия на всю заводскую продукцию 2 года, либо 2000 моточасов
+
+                                    .gallery-item-features-list-item
+                                        .gallery-item-features-list-item-icon-container
+                                            +add_svg({
+                                                class: "gallery-item-features-list-item__icon",
+                                                icon: "shield-with-check"
+                                            })
+                                        .gallery-item-features-list-item__description Каждая ДЭС проверяется минимум в течение 2-х часов, что гарантирует отсутствие брака
+
+                                    .gallery-item-features-list-item
+                                        .gallery-item-features-list-item-icon-container
+                                            +add_svg({class: "gallery-item-features-list-item__icon", icon: "timer"})
+                                        .gallery-item-features-list-item__description Свой склад, поэтому отгрузка товара происходит в течение 1-2 дней после оплаты
+
+                                .button-container.go-to-catalog-button
+                                    a(href="#").button.button-orange
+                                        span Перейти в каталог
+                                            +add_svg({class: "button__icon", icon: "next-arrow"})
+                                        .button-shadow.button-shadow--orange
+
+                        a(href="#").home-page-gallery__item-generator
+                            img(src="img/generator.png")
+
+                        .home-page-gallery__item-circle-white
+
+
+                // 2 слайд
+                .home-page-gallery-container(style="background-image: url(img/header-slider-bg.jpg)")
+                    .container
+                        .home-page-gallery__item-circle-blue
+                            .home-page-gallery-item__description
+                                h1 Надежный поставщик энергии вашего бизнеса
+                                p
+                                    | Огромный опыт производства, монтажа и поставки дизельных генераторов </br>
+                                    | по всей России
+
+                                .gallery-item-features-list
+                                    .gallery-item-features-list-item
+                                        .gallery-item-features-list-item-icon-container
+                                            +add_svg({class: "gallery-item-features-list-item__icon", icon: "cup"})
+                                        .gallery-item-features-list-item__description Гарантия на всю заводскую продукцию 2 года, либо 2000 моточасов
+
+                                    .gallery-item-features-list-item
+                                        .gallery-item-features-list-item-icon-container
+                                            +add_svg({
+                                                class: "gallery-item-features-list-item__icon",
+                                                icon: "shield-with-check"
+                                            })
+                                        .gallery-item-features-list-item__description Каждая ДЭС проверяется минимум в течение 2-х часов, что гарантирует отсутствие брака
+
+                                    .gallery-item-features-list-item
+                                        .gallery-item-features-list-item-icon-container
+                                            +add_svg({class: "gallery-item-features-list-item__icon", icon: "timer"})
+                                        .gallery-item-features-list-item__description Свой склад, поэтому отгрузка товара происходит в течение 1-2 дней после оплаты
+
+                                .button-container.go-to-catalog-button
+                                    a(href="#").button.button-orange
+                                        span Перейти в каталог
+                                            +add_svg({class: "button__icon", icon: "next-arrow"})
+                                        .button-shadow.button-shadow--orange
+
+                        a(href="#").home-page-gallery__item-generator
+                            img(src="img/generator.png")
+
+                        .home-page-gallery__item-circle-white
+
+
+                // 3 слайд
+                .home-page-gallery-container.home-page-gallery-container-video
+                    video.gallery-video
+                        source(src="static/video.webm" type="video/webm")
+                        source(src="static/video.mp4" type="video/mp4")
+
+                        | Простите но ваш браузер не поддерживает HTML5 видео
+
+section.home-page-gallery-container-open-button
+    .button-open Показать
