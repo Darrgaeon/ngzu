@@ -44,6 +44,10 @@ module.exports = function () {
         }
 
         $link.data("lockedAt", +new Date());
+
+        if($homeGallery.slick("slickCurrentSlide") === 2) {
+            $galleryVideo[0].play();
+        }
     });
 
     $navButtonNext.on("click", function (e) {
@@ -66,12 +70,10 @@ module.exports = function () {
         }
 
         $link.data("lockedAt", +new Date());
-        console.log("номер: ", $homeGallery.slick('slickCurrentSlide'));
+        console.log("номер: ", $homeGallery.slick("slickCurrentSlide"));
 
-        if($homeGallery.slick('slickCurrentSlide') === 2) {
+        if($homeGallery.slick("slickCurrentSlide") === 2) {
             $galleryVideo[0].play();
-            console.log("+", $galleryVideo);
-
         }
 
     });
@@ -106,5 +108,9 @@ module.exports = function () {
         });
 
         $(this).toggleClass("active");
+
+        if($homeGallery.slick("slickCurrentSlide") === 2) {
+            $galleryVideo[0].play();
+        }
     });
 };
