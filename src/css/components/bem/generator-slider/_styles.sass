@@ -1,0 +1,116 @@
+@import "../../vars"
+
+.generator-slider
+  position: relative
+  width: 100%
+
+  .range-input
+    display: none
+
+  &-wrapper
+    position: relative
+    width: 100%
+
+  &-status
+    box-sizing: border-box
+    display: flex
+    align-content: center
+
+    width: 100%
+    background: #f7f7f7
+
+    padding: 11px 17px 11px
+
+    height: 47px
+
+    label
+      flex: 1
+      display: flex
+      align-items: center
+      font-size: 15px
+
+      color: #88919D
+
+      &:last-child
+        display: flex
+        justify-content: flex-end
+        position: relative
+
+        &:before
+          content: ""
+          position: absolute
+          height: 100%
+          width: 1px
+
+          top: 0
+          left: 0
+
+          background: #DBE1E9
+
+      input
+        display: block
+        width: 33px
+
+        background: none
+        border: none
+        outline: none
+        padding: 0
+        height: 15px
+        margin: 0 0 0 5px
+
+        position: relative
+        top: -1px
+        left: 0
+
+        z-index: 2
+
+        /* Hide HTML5 Up and Down arrows. */
+        &[type="number"]::-webkit-outer-spin-button,
+        &[type="number"]::-webkit-inner-spin-button
+          -webkit-appearance: none
+          margin: 0
+
+        &[type="number"]
+          -moz-appearance: textfield
+
+  .irs
+    &-line
+      height: 3px
+      border: none
+      border-radius: 0
+      background: #B2BDCB
+
+    &-bar
+      height: 3px
+      border: none
+      border-radius: 0
+
+      background: linear-gradient(180deg, #F49020 0%, #FF6B00 100%), #F49020
+
+    &-handle
+      width: 16px
+      height: 16px
+
+      border: none
+      border-radius: 3px
+      box-shadow: none
+
+      background: linear-gradient(180deg, #F49020 0%, #FF6B00 100%), #F49020
+
+      top: 16px
+      z-index: 3
+
+      i:first-child
+        display: none !important
+
+      &:before
+        content: ""
+        position: absolute
+
+        width: 6px
+        height: 6px
+
+        top: calc(50% - 3px)
+        left: calc(50% - 3px)
+
+        background: #FFFFFF
