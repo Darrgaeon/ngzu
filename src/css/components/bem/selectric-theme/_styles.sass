@@ -1,0 +1,37 @@
+@import "../../vars"
+
+.selectric
+  border: none
+  border-radius: 0
+
+  background: #F7F7F7
+
+  .label
+    font-family: $font-base
+    font-size: 14px
+    padding: 5px 6px
+
+  .chosen-select-container__icon
+    transition: $transition-duration
+
+
+  &-items
+    border: 0
+    background: #F7F7F7
+    box-shadow: 0 0 15px rgba(20, 29, 46, .02)
+
+    li
+      transition: $transition-duration
+      padding: 5px 15px
+
+      @include on-hover
+        background: $color-grey
+
+      &.selected
+        background: #ff6b00
+        color: #ffffff
+
+  &-open
+    .selectric
+    .chosen-select-container__icon
+      transform: rotate(-90deg)
