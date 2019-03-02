@@ -1,7 +1,12 @@
+Installation 🛠
+Just type this command
+```Bash
+npm install
+```
+
 ## Running the project 🚀
 Just type this command to start developing.
 ```Bash
-npm install
 npm run start
 ```
 
@@ -10,6 +15,5 @@ If your template is ready to deploy you have to run build command. It will minim
 clean up the dist folder.
 
 ```Bash
-npm install
 npm run build
 ```
