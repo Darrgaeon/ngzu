@@ -1,4 +1,4 @@
-Installation 🛠
+## Installation 🛠
 Just type this command
 ```Bash
 npm install
