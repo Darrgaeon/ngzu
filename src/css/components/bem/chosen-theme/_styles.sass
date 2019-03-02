@@ -1,0 +1,84 @@
+@import "../../vars"
+
+.chosen-select-container
+  position: relative
+
+  &__icon
+    position: absolute
+    top: 16px
+    right: 13px
+
+    padding: 3px
+    cursor: pointer
+
+    z-index: 2
+
+    width: 13px
+    height: 12px
+
+    transform: rotate(90deg)
+
+    fill: #88919D
+    transition-duration: $transition-duration
+
+    @media not all and (pointer: coarse)
+      &:hover
+        fill: $color-black
+
+    @media screen and (min-width: 1025px)
+      &:hover
+        fill: $color-black
+
+    &:active
+      fill: $color-black
+
+    &.active
+      transform: rotate(-90deg)
+
+  .chosen
+    &-container
+      width: 100% !important
+
+    &-choices
+      border: none
+      background: none
+      background: #F7F7F7
+      padding: 11px 17px 10px
+      box-shadow: none
+
+      box-sizing: border-box
+
+    &-container-active
+      .chosen-choices
+        box-shadow: none !important
+
+      .chosen-drop
+        opacity: 1 !important
+
+
+    &-search
+      &-input
+        color: $color-black !important
+
+        &::placeholder
+          color: $color-black !important
+
+    &-drop
+      border: none
+      box-shadow: 0 3px 5px rgba(#000, .25)
+      opacity: 0
+
+      transition-duration: $transition-duration
+
+  // On hover
+  .chosen-container .chosen-results li.highlighted
+    background: $gradient-orange
+
+  .chosen-container-multi .chosen-choices li.search-choice
+    padding-right: 20px
+    outline: none
+    box-shadow: none
+    background: #FFFFFF
+    box-sizing: border-box
+    border: 1px solid rgba(#000, .05)
+    border-radius: 0
