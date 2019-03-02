@@ -252,8 +252,24 @@ gulp.task('js', () => {
     // wait a bit for it
     return gulp.src(paths.build.js, {base: config.path.source})
         .pipe(plumber(config.plumber))
-        .pipe(bro(config.browserify))
+        .pipe(gulpIf(config.isDevelopment, sourcemaps.init()))
+        .pipe(bro({
+            transform: [
+                babelify.configure({
+                    presets: [
+                        [
+                            '@babel/preset-env',
+                            {
+                                useBuiltIns: 'usage'
+                            }
+                        ]
+                    ]
+                }),
+                ['uglifyify', {global: true}]
+            ]
+        }))
         .pipe(rename({suffix: '.min'}))
+        .pipe(gulpIf(config.isDevelopment, sourcemaps.write(".")))
         .pipe(gulp.dest(config.path.dist));
 });
 

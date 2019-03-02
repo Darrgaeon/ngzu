@@ -8,14 +8,12 @@ function init() {
     require("svg4everybody/dist/svg4everybody")();
     require("retinajs/dist/retina");
     require("uikit/dist/js/uikit");
-    require("uikit/dist/js/uikit.min");
     require("slick-carousel/slick/slick");
     require("jquery-validation/dist/jquery.validate");
     require("jquery.maskedinput/src/jquery.maskedinput");
     require("@fancyapps/fancybox/dist/jquery.fancybox");
     require("selectric/public/jquery.selectric")();
     require("ion-rangeslider/js/ion.rangeSlider");
-    // require("baguettebox.js/dist/baguetteBox");
 
     $(document).ready(function () {
         require("./components/mobile-menu")();
