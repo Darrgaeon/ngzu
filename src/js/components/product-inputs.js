@@ -22,6 +22,9 @@ module.exports = function () {
 
     // Items in block Product-variant
     $productVariant.on("click", "label input", function () {
+        // const index = $(this).index();
+        // console.log(index)
+
         const id = $(this).attr("id");
         const getPrice = $(this).data("price");
 
