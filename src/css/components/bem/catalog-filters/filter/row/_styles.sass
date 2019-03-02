@@ -1,0 +1,77 @@
+@import "../../../../vars"
+
+.catalog-filter-row
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+
+  @media screen and (max-width: 1152px)
+    flex-direction: row
+
+  @media screen and (max-width: 580px)
+    flex-direction: column
+
+  &-item
+    font-size: 14px
+
+    @media screen and (max-width: 1215px) and (min-width: 1153px)
+      margin-left: 0
+      padding: 2px 0
+
+      &:nth-child(2)
+        width: 100%
+        order: 1
+
+      &.ml-auto
+        order: 0
+
+    @media screen and (max-width: 893px)
+      margin-left: 0 !important
+
+    @media screen and (max-width: 580px)
+      padding: 2px 0
+
+    &:last-child
+      @media screen and (max-width: 753px)
+        margin-left: auto !important
+        position: relative
+        top: -8px
+        left: 0
+
+      @media screen and (max-width: 580px)
+        margin-left: 0 !important
+        position: static
+
+      @media screen and (max-width: 450px)
+        margin-top: 8px
+
+    .generator-form-power
+      font-size: 14px
+
+      margin-right: 28px
+
+      @media screen and (max-width: 1230px)
+        margin-right: 20px
+
+      @media screen and (max-width: 1215px) and (min-width: 1153px)
+        padding: 0
+        margin-right: 0
+
+      @media screen and (max-width: 753px)
+        padding: 0
+
+      @media screen and (max-width: 580px)
+        margin-right: 0
+
+      & > span
+        font-size: 14px
+        margin-right: 3px
+
+        @media screen and (max-width: 450px)
+          width: 100%
+          margin-right: 0
+          margin-bottom: -8px
+
+      input[type=radio]:not(:checked) + span
+        color: $color-black
+        border-color: $color-black

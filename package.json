@@ -14,12 +14,14 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.6",
     "bootstrap": "^4.2.1",
+    "ion-rangeslider": "^2.2.0",
     "jquery": "^3.3.1",
     "jquery-validation": "^1.19.0",
     "jquery.maskedinput": "^1.4.1",
     "normalize.css": "^8.0.1",
     "perfect-scrollbar": "^1.4.0",
     "retinajs": "https://github.com/strues/retinajs",
+    "selectric": "^1.13.0",
     "slick-carousel": "git+https://github.com/kenwheeler/slick.git",
     "svg4everybody": "^2.1.9",
     "uikit": "^3.0.0-rc.26"
