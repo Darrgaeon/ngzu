@@ -7,6 +7,12 @@
 
   width: fit-content
 
+  @media screen and (max-width: 420px)
+    max-width: 330px
+
+  //@media screen and (max-width: 375px)
+    max-width: 320px
+
   h1
     line-height: 40px
     font-size: 32px
@@ -18,6 +24,14 @@
     margin-bottom: 13px
 
     max-width: 387px
+
+    @media screen and (max-width: 420px)
+      font-size: 26px
+
+    @media screen and (max-width: 375px)
+      font-size: 20px
+
+      max-width: 300px
 
   p
     font-weight: normal
@@ -31,13 +45,24 @@
 
     margin-bottom: 34px
 
+    @media screen and (max-width: 375px)
+      font-size: 14px
+
+      margin-bottom: 15px
+
 .gallery-item-features-list
   margin-bottom: 60px
+
+  //@media screen and (max-width: 375px)
+  //  m
 
   &-item
     display: flex
 
     margin-bottom: 20px
+
+    @media screen and (max-width: 375px)
+      max-width: 277px
 
     &-icon-container
       margin-right: 13px
@@ -68,7 +93,7 @@
 
   position: relative
 
-  z-index: 3
+  z-index: 11
 
   .button
     padding: 15px 26px 15px 31px

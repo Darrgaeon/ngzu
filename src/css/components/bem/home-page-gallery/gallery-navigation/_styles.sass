@@ -43,17 +43,9 @@
 
     display: none
 
-    //position: absolute
-    //right: 15px
-    //top: 15px
-
-    //z-index: 5
-
     &:hover
       background: $color-blue
       color: $color-white
-
-
 
 
 .home-page-gallery-navigation
@@ -65,12 +57,27 @@
   bottom: 28px
   left: 391px
 
+  z-index: 5
+
+  @media screen and (max-width: 910px)
+    display: flex
+
+    margin-left: auto
+    margin-right: auto
+
+    left: 0
+    right: 0
+    bottom: 6px
+
+    width: fit-content
+
+  @media screen and (max-width: 510px)
+    top: 20px
+
+    margin-left: 10px
 
   &-wrapper
     position: relative
-    z-index: 3
-
-    //height: 609px
     height: 100%
 
     display: flex
@@ -80,7 +87,6 @@
     height: 40px
 
     margin: 0 20px
-    //margin: 0 10px
 
     background: inherit
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.03)
@@ -93,6 +99,9 @@
     cursor: pointer
 
     transition: $transition-duration
+
+    @media screen and (max-width: 510px)
+      margin: 0 5px
 
     &:hover
       border-color: #f88012
@@ -123,6 +132,9 @@
 
     margin: 0
     padding: 0
+
+    @media screen and (max-width: 510px)
+      display: none
 
 
     li
